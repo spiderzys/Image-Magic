@@ -10,12 +10,18 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [PhotoRequester sharedInstance].delegate = self;
+ 
+    
+
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -23,5 +29,23 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (IBAction)getPhotoViaPhotoLibrary:(UIButton *)sender {
+    
+    
+    
+}
+
+- (void)didFinishRequestPhoto:(UIImage*)photo{
+    
+    _backgroundImageView.image = photo;
+}
+
+- (IBAction)GoButtonTouched:(UIButton *)sender {
+    // when user specified the photo
+    
+}
+
 
 @end

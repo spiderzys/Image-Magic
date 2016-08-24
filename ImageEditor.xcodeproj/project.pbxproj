@@ -11,10 +11,12 @@
 		697824EB1D6CC54E001437BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 697824EA1D6CC54E001437BE /* AppDelegate.m */; };
 		697824EE1D6CC54E001437BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697824ED1D6CC54E001437BE /* ViewController.m */; };
 		697824F11D6CC54E001437BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697824EF1D6CC54E001437BE /* Main.storyboard */; };
-		697824F31D6CC54E001437BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697824F21D6CC54E001437BE /* Assets.xcassets */; };
 		697824F61D6CC54E001437BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697824F41D6CC54E001437BE /* LaunchScreen.storyboard */; };
 		697825011D6CC54E001437BE /* ImageEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 697825001D6CC54E001437BE /* ImageEditorTests.m */; };
 		6978250C1D6CC54E001437BE /* ImageEditorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6978250B1D6CC54E001437BE /* ImageEditorUITests.m */; };
+		6978251C1D6CEA94001437BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6978251B1D6CEA94001437BE /* Assets.xcassets */; };
+		6978251F1D6D073E001437BE /* APICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6978251E1D6D073E001437BE /* APICommunicator.m */; };
+		697825281D6D4BE0001437BE /* PhotoRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 697825271D6D4BE0001437BE /* PhotoRequester.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,6 @@
 		697824EC1D6CC54E001437BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		697824ED1D6CC54E001437BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		697824F01D6CC54E001437BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		697824F21D6CC54E001437BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		697824F51D6CC54E001437BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		697824F71D6CC54E001437BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697824FC1D6CC54E001437BE /* ImageEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +52,11 @@
 		697825071D6CC54E001437BE /* ImageEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6978250B1D6CC54E001437BE /* ImageEditorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageEditorUITests.m; sourceTree = "<group>"; };
 		6978250D1D6CC54E001437BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6978251B1D6CEA94001437BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6978251D1D6D073E001437BE /* APICommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICommunicator.h; sourceTree = "<group>"; };
+		6978251E1D6D073E001437BE /* APICommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APICommunicator.m; sourceTree = "<group>"; };
+		697825261D6D4BE0001437BE /* PhotoRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoRequester.h; sourceTree = "<group>"; };
+		697825271D6D4BE0001437BE /* PhotoRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoRequester.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +109,12 @@
 			children = (
 				697824E91D6CC54E001437BE /* AppDelegate.h */,
 				697824EA1D6CC54E001437BE /* AppDelegate.m */,
-				697824EC1D6CC54E001437BE /* ViewController.h */,
-				697824ED1D6CC54E001437BE /* ViewController.m */,
+				697825221D6D0BF5001437BE /* View */,
+				697825201D6D07D6001437BE /* Controller */,
+				697825211D6D07F2001437BE /* Modal */,
 				697824EF1D6CC54E001437BE /* Main.storyboard */,
-				697824F21D6CC54E001437BE /* Assets.xcassets */,
 				697824F41D6CC54E001437BE /* LaunchScreen.storyboard */,
+				6978251B1D6CEA94001437BE /* Assets.xcassets */,
 				697824F71D6CC54E001437BE /* Info.plist */,
 				697824E61D6CC54D001437BE /* Supporting Files */,
 			);
@@ -138,6 +145,33 @@
 				6978250D1D6CC54E001437BE /* Info.plist */,
 			);
 			path = ImageEditorUITests;
+			sourceTree = "<group>";
+		};
+		697825201D6D07D6001437BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				697824EC1D6CC54E001437BE /* ViewController.h */,
+				697824ED1D6CC54E001437BE /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		697825211D6D07F2001437BE /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				697825261D6D4BE0001437BE /* PhotoRequester.h */,
+				697825271D6D4BE0001437BE /* PhotoRequester.m */,
+				6978251D1D6D073E001437BE /* APICommunicator.h */,
+				6978251E1D6D073E001437BE /* APICommunicator.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		697825221D6D0BF5001437BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				697824F61D6CC54E001437BE /* LaunchScreen.storyboard in Resources */,
-				697824F31D6CC54E001437BE /* Assets.xcassets in Resources */,
+				6978251C1D6CEA94001437BE /* Assets.xcassets in Resources */,
 				697824F11D6CC54E001437BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +307,8 @@
 				697824EE1D6CC54E001437BE /* ViewController.m in Sources */,
 				697824EB1D6CC54E001437BE /* AppDelegate.m in Sources */,
 				697824E81D6CC54D001437BE /* main.m in Sources */,
+				6978251F1D6D073E001437BE /* APICommunicator.m in Sources */,
+				697825281D6D4BE0001437BE /* PhotoRequester.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PhotoRequester.h"
+@interface ViewController : UIViewController <PhotoRequestDelegate>
 
-@interface ViewController : UIViewController
 
 
 @end
