@@ -8,57 +8,88 @@
 
 #import "PhotoRequester.h"
 #import "APICommunicator.h"
-@implementation PhotoRequester
-
-
-
-
-- (UIImage*)requestPhotoViaSource:(enum photoSource)source{
+@implementation PhotoRequester{
     
-    switch (source) {
-        case photoLibrary:
-            return [self requestPhotoViaPhotoLibrary];
-        case camera:
-            return [self requestPhotoViaCamera];
-        default:
-            return [self requestPhotoViaInstagram];
-    }
-  
 }
 
-- (UIImage*)requestPhotoViaPhotoLibrary{
+
+
+
+- (void)requestPhotoViaSource:(enum photoSource)source{
+    
+    // request photo from specified source
     if (_delegate != nil){
+            switch (source) {
+            case photoLibrary:
+                 [self requestLocalPhotoViaSourceTyple:UIImagePickerControllerSourceTypePhotoLibrary];
+            case camera:
+                 [self requestLocalPhotoViaSourceTyple:UIImagePickerControllerSourceTypeCamera];
+            default:
+                 [self requestPhotoViaInstagram];
+        }
         
     }
     
-    return nil;
 }
 
--(UIImage*)requestPhotoViaCamera{
-    
-    
-    return nil;
+
+- (void)requestLocalPhotoViaSourceTyple:(UIImagePickerControllerSourceType)SourceType{
+    if([UIImagePickerController isSourceTypeAvailable:SourceType]){
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        [picker setSourceType:SourceType];
+        picker.allowsEditing = false;
+        [_delegate presentViewController:picker animated:true completion:nil];
+    }
 }
 
--(UIImage*)requestPhotoViaInstagram{
+
+- (void)requestPhotoViaInstagram{
     
     
-    return nil;
+   
 }
+
+
+#pragma UIImagePickerControllerDelegate
+
+
+- (void)imagePickerController:(UIImagePickerController *)picker
+didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info{
+   
+    
+    UIImage *image = (UIImage*)[info valueForKey:UIImagePickerControllerOriginalImage];
+    [picker dismissViewControllerAnimated:YES completion:^{
+        [_delegate didFinishRequestPhoto:image];
+    }];
+}
+
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    
+}
+
+
 
 +(PhotoRequester*)sharedInstance{
+   
+    // sharedInstance is the only object for access
     static PhotoRequester *sharedInstance = nil;
+    NSLog(@"%@",sharedInstance);
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[PhotoRequester alloc] init];
-        // Do any other initialisation stuff here
+        
     });
     return sharedInstance;
 }
 
 + (id)allocWithZone:(NSZone *)zone
 {
+    
+    // alloc init method  override to avoid new object init
     static PhotoRequester *sharedInstance = nil;
+    NSLog(@"%@",sharedInstance);
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [super allocWithZone:zone];

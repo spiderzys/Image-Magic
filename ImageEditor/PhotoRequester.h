@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+// this class will request photo from specified source
 typedef NS_ENUM(NSInteger,photoSource){
     photoLibrary = 1,
     camera,
@@ -16,14 +16,16 @@ typedef NS_ENUM(NSInteger,photoSource){
 };
 
 
-@protocol PhotoRequestDelegate <NSObject>
+@protocol PhotoRequestDelegate <NSObject>  // the delegate should know what to do after request
 - (void)didFinishRequestPhoto:(UIImage*)photo;
 @end
 
-@interface PhotoRequester : NSObject
-@property (nonatomic, weak) id<PhotoRequestDelegate> delegate;
-+(PhotoRequester*)sharedInstance;
--(UIImage*)requestPhotoViaSource:(enum photoSource)source;
+@interface PhotoRequester : NSObject <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+
+@property (nonatomic, weak) UIViewController<PhotoRequestDelegate>* delegate; // only view controller can be the delegate
+
++(PhotoRequester*)sharedInstance; // singleton
+-(void)requestPhotoViaSource:(enum photoSource)source;  // open interface for initializing a  request
 
 
 @end

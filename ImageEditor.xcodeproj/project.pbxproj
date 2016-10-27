@@ -112,7 +112,6 @@
 				697825221D6D0BF5001437BE /* View */,
 				697825201D6D07D6001437BE /* Controller */,
 				697825211D6D07F2001437BE /* Modal */,
-				697824EF1D6CC54E001437BE /* Main.storyboard */,
 				697824F41D6CC54E001437BE /* LaunchScreen.storyboard */,
 				6978251B1D6CEA94001437BE /* Assets.xcassets */,
 				697824F71D6CC54E001437BE /* Info.plist */,
@@ -152,6 +151,7 @@
 			children = (
 				697824EC1D6CC54E001437BE /* ViewController.h */,
 				697824ED1D6CC54E001437BE /* ViewController.m */,
+				697824EF1D6CC54E001437BE /* Main.storyboard */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 		697824DB1D6CC54D001437BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "YANGSHENG ZOU";
 				TargetAttributes = {
 					697824E21D6CC54D001437BE = {
@@ -377,8 +377,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -422,8 +424,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -534,6 +538,7 @@
 				697825121D6CC54E001437BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		697825131D6CC54E001437BE /* Build configuration list for PBXNativeTarget "ImageEditorTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +547,7 @@
 				697825151D6CC54E001437BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		697825161D6CC54E001437BE /* Build configuration list for PBXNativeTarget "ImageEditorUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +556,7 @@
 				697825181D6CC54E001437BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

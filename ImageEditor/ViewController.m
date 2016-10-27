@@ -10,13 +10,15 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
 @end
 
-@implementation ViewController
+@implementation ViewController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
+   
     [PhotoRequester sharedInstance].delegate = self;
  
     
@@ -31,15 +33,20 @@
 }
 
 
-- (IBAction)getPhotoViaPhotoLibrary:(UIButton *)sender {
-    
-    
-    
+- (IBAction)photoLibraryButtonClicked:(UIButton *)sender {
+    [[PhotoRequester sharedInstance] requestPhotoViaSource:photoLibrary];
+}
+- (IBAction)cameraPhotoClicked:(UIButton *)sender {
+    [[PhotoRequester sharedInstance] requestPhotoViaSource:camera];
+}
+- (IBAction)InstagramButtonClicked:(UIButton *)sender {
+    [[PhotoRequester sharedInstance] requestPhotoViaSource:instagram];
 }
 
 - (void)didFinishRequestPhoto:(UIImage*)photo{
-    
+
     _backgroundImageView.image = photo;
+    
 }
 
 - (IBAction)GoButtonTouched:(UIButton *)sender {
