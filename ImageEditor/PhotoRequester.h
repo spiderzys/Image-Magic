@@ -24,8 +24,8 @@ typedef NS_ENUM(NSInteger,photoSource){
 
 @property (nonatomic, weak) UIViewController<PhotoRequestDelegate>* delegate; // only view controller can be the delegate
 
-+(PhotoRequester*)sharedInstance; // singleton
--(void)requestPhotoViaSource:(enum photoSource)source;  // open interface for initializing a  request
++ (PhotoRequester*)sharedInstance; // singleton
+- (void)requestPhotoViaSource:(enum photoSource)source;  // open interface for initializing a  request
 
 
 @end
