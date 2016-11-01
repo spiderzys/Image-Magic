@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageEditor/PhotoRequester.m"
-            timestampString = "499556629.923176"
+            timestampString = "499237516.313893"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "-requestPhotoViaSource:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageEditor/PhotoRequester.m"
-            timestampString = "499667081.182047"
+            timestampString = "499239304.671665"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "+sharedInstance"
             landmarkType = "7">
             <Locations>
@@ -79,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
-            landmarkName = "-GoButtonTouched:"
+            landmarkName = "-didFinishRequestPhoto:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

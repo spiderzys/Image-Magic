@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "PhotoRequester.h"
-
-
 @interface ViewController : UIViewController <PhotoRequestDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;

@@ -19,7 +19,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-C5-dRr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-C5-dRr">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kab-ZW-8bM">
@@ -64,18 +66,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="khD-v2-vyt" firstAttribute="centerY" secondItem="cu0-sh-jJg" secondAttribute="centerY" id="1Rm-oz-S7J"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Eni-C5-dRr" secondAttribute="bottom" id="5FZ-2P-a8m"/>
                             <constraint firstItem="khD-v2-vyt" firstAttribute="height" secondItem="cu0-sh-jJg" secondAttribute="height" id="CJ6-N8-jIP"/>
                             <constraint firstItem="cu0-sh-jJg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Cj6-60-dEe"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="centerY" secondItem="cu0-sh-jJg" secondAttribute="centerY" id="Dom-7m-yzg"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="height" secondItem="cu0-sh-jJg" secondAttribute="height" id="Q8t-h6-IEh"/>
                             <constraint firstItem="cu0-sh-jJg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Z1u-S6-Cok"/>
-                            <constraint firstAttribute="trailing" secondItem="Eni-C5-dRr" secondAttribute="trailing" id="aOr-TF-vfC"/>
-                            <constraint firstItem="Eni-C5-dRr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hND-ut-Pt3"/>
                             <constraint firstItem="xA9-xf-lO2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="htO-46-YXB"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="kGd-KP-Ebh"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="width" secondItem="cu0-sh-jJg" secondAttribute="width" id="kIG-GS-d83"/>
-                            <constraint firstItem="Eni-C5-dRr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oP6-FZ-XTy"/>
                             <constraint firstItem="khD-v2-vyt" firstAttribute="width" secondItem="cu0-sh-jJg" secondAttribute="width" id="tJ9-1A-Kpr"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="vLC-cO-6oC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xA9-xf-lO2" secondAttribute="bottom" constant="10" id="vQq-VF-Qs0"/>
@@ -95,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336.23188405797106" y="291.84782608695656"/>
+            <point key="canvasLocation" x="336.80000000000001" y="291.90404797601201"/>
         </scene>
     </scenes>
     <resources>

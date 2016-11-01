@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>InstagramImagePicker.xcscheme</key>
+		<key>NXOAuth2Client.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4A554C373EF393067D389F7B20988BD8</key>
+		<key>1E85AABA23B5E543708FA4E03130F831</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ABF977EB1E49B11448EB027174BFC1C3</key>
+		<key>4DB6AB6A48D0FCED8856BA6381196073</key>
 		<dict>
 			<key>primary</key>
 			<true/>

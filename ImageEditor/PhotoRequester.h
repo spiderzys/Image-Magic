@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <OLInstagramImagePickerController.h>
-
 // this class will request photo from specified source
 typedef NS_ENUM(NSInteger,photoSource){
     photoLibrary = 1,
@@ -22,7 +20,7 @@ typedef NS_ENUM(NSInteger,photoSource){
 - (void)didFinishRequestPhoto:(UIImage*)photo;
 @end
 
-@interface PhotoRequester : NSObject <UIImagePickerControllerDelegate,UINavigationControllerDelegate, OLInstagramImagePickerControllerDelegate>
+@interface PhotoRequester : NSObject <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (nonatomic, weak) UIViewController<PhotoRequestDelegate>* delegate; // only view controller can be the delegate
 
