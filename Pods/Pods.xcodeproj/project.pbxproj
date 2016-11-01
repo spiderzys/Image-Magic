@@ -10,157 +10,49 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>006CA7289952B00BA727BEF299ECE8BD</key>
+		<key>00EC169AAE99DC1A8F855B8FC0273A9E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>BAB9875721EA1EC3B186DF52F03700E0</string>
+			<string>115F69A048D5519E8BC4D9E7DF386C6D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
-		<key>0307982621563C439755B9BC0ED60A1A</key>
+		<key>0926B1FEFB084AC0D2608E411BFCBDB1</key>
 		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0BD2814356378D4F668B39419ADA9F6B</string>
+				<string>A09B24ADFD172E60B7EF56B0DF65DC4E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>030F0474A6754EF84364C12272EA4CC9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NXOAuth2ClientDelegate.h</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2ClientDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>04E2DD09C80FFFC1B52FCE15DB4D392F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NXOAuth2FileStreamWrapper.h</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2FileStreamWrapper.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>07C10420101ED193343A792F9DAE112D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSURL+NXOAuth2.h</string>
-			<key>path</key>
-			<string>Sources/NSURL+NXOAuth2.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0992373E828319E84CF32CA572BA3877</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5D1E31BDB871C089401EE016924BD1B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>0AFBB8793EBA95C785BEF1C6BF0C0DA7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSString+NXOAuth2.m</string>
-			<key>path</key>
-			<string>Sources/NSString+NXOAuth2.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0C5EA396DF5BC52261DF41E37DEC48AC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NXOAuth2Connection.m</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2Connection.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0D5FE769484C2F3F8BC8B2EFDAEC8BEB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NXOAuth2Account+Private.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E48CD3F72B2BDF585990510F50B1391</key>
+		<key>0BD2814356378D4F668B39419ADA9F6B</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>2EAD9880AE4E121C2EA96E103C82FC75</string>
+			<string>5A876E04A3967A3168619C97CA3211C0</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
 				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/NXOAuth2Client/NXOAuth2Client-prefix.pch</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
 				<string>9.3</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
 				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
+				<string>YES</string>
 				<key>OTHER_LDFLAGS</key>
 				<string></string>
 				<key>OTHER_LIBTOOLFLAGS</key>
 				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
 				<key>SDKROOT</key>
 				<string>iphoneos</string>
 				<key>SKIP_INSTALL</key>
@@ -169,9 +61,16 @@
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Release</string>
+			<string>Debug</string>
 		</dict>
-		<key>13B6FF6D96E2EDF76B45744218EA1B50</key>
+		<key>0CB1E25EB1C3BB506F9EC7A251FDFA9B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D4BCCF16B5DFA35793D498B214958B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0D4BCCF16B5DFA35793D498B214958B6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -180,111 +79,73 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>NXOAuth2Account.m</string>
+			<string>OLInstagramLoginWebViewController.m</string>
 			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2Account.m</string>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramLoginWebViewController.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>14F8D67084EF2B657BE3D070D57939E5</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libNXOAuth2Client.a</string>
-			<key>path</key>
-			<string>libNXOAuth2Client.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>163995DE24CB5C539DFAD54A3D8D9028</key>
+		<key>115F69A048D5519E8BC4D9E7DF386C6D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NXOAuth2Account.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2Account.h</string>
+			<string>InstagramImagePicker-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>198F8CB2EB0FD8A76BB8F827216B6B77</key>
+		<key>12B4E17E49201986AF251E38D69C6525</key>
 		<dict>
-			<key>fileRef</key>
-			<string>500D8A03EC094F191312A68A1A093112</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>1CC5AACA78908ED08FB968E551C9E907</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCBBDD655EEB52F6ACFBAA1324BF7EBA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>1D56CA0D7139A4028B93CA7E074AEDDF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A5F138F4D623FE202C2C00BDFB92D291</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>1E85AABA23B5E543708FA4E03130F831</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C89A8A53A46D3DEF96F80C4034490CA4</string>
-			<key>buildPhases</key>
-			<array>
-				<string>28A89D93FC444A6217968F7769FA4266</string>
-				<string>BE98135A552FC71BF990DB90C060E208</string>
-				<string>E00EFA61CB6BE390356A2D41B9BACC8C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
 			<key>name</key>
-			<string>NXOAuth2Client</string>
-			<key>productName</key>
-			<string>NXOAuth2Client</string>
-			<key>productReference</key>
-			<string>14F8D67084EF2B657BE3D070D57939E5</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
+			<string>OLInstagramImagePickerViewController.xib</string>
+			<key>path</key>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImagePickerViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1FC05C99BA48029B527FC7482BBA87D5</key>
+		<key>146C099F2043129AF80963F101AF0606</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1CEEFDD36431B2A0B84FC65105990BFE</string>
+				<string>97135AFA5D0F4565C929F984867D8601</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>190D797DFAAC886AD1CA0FC3AB1A442C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OLInstagramImagePickerController.m</string>
+			<key>path</key>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImagePickerController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>19A664A6FD012E8284110788FAFD87FD</key>
 		<dict>
 			<key>fileRef</key>
-			<string>163995DE24CB5C539DFAD54A3D8D9028</string>
+			<string>888E5EF3576ED76B2C34A4737C2BC176</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -295,16 +156,16 @@
 				</array>
 			</dict>
 		</dict>
-		<key>203555FFD858DEF94D638D31EC450BF5</key>
+		<key>1CEEFDD36431B2A0B84FC65105990BFE</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>2EAD9880AE4E121C2EA96E103C82FC75</string>
+			<string>F59C78231C356797F63ED2BF5936A28F</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
 				<string>YES</string>
 				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/NXOAuth2Client/NXOAuth2Client-prefix.pch</string>
+				<string>Target Support Files/InstagramImagePicker/InstagramImagePicker-prefix.pch</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
 				<string>9.3</string>
 				<key>MTL_ENABLE_DEBUG_INFO</key>
@@ -329,92 +190,25 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>23184A15200DFE888A0DAF6C8055F141</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NXOAuth2Request.h</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2Request.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>243D06341EFCFD7FDE75E4B17B5A1FC1</key>
+		<key>1D9282A0AE778252C7424A51BFD8D487</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>14F8D67084EF2B657BE3D070D57939E5</string>
-				<string>A123767674DB6935496A1937B1037BC0</string>
+				<string>A2ADE186138C3BAFB50FB21C46576DA9</string>
+				<string>12B4E17E49201986AF251E38D69C6525</string>
+				<string>9D96C8A09CC270EA73C3D86582675DD8</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Products</string>
+			<string>Resources</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>25CA6FEDF369206740019715F78BF4C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NXOAuth2TrustDelegate.h</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2TrustDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>28A89D93FC444A6217968F7769FA4266</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>496F81C0BF46852BDB2FF6DD0613A705</string>
-				<string>9182B36F359CE9F54AD3CD24BE93CBC5</string>
-				<string>2F603E30DC05C00DA356E6A85631BB91</string>
-				<string>F61B50E72560137C1BAB08BB5E0F704B</string>
-				<string>876B49C130BA2283A8A226A296C950F3</string>
-				<string>0992373E828319E84CF32CA572BA3877</string>
-				<string>43E283C47E79FE66D338B3049661CEE8</string>
-				<string>D6DF5A496FD858DE4036ACE9A912C895</string>
-				<string>67B47E511DCA3A06974DBCFE2B65D012</string>
-				<string>F80352DA4E8B5745EFBBAE0A619D62CD</string>
-				<string>3AE3D4CD9960B3471E2E445470807E92</string>
-				<string>AB7A92BC0570218D33CB991B74709C56</string>
-				<string>198F8CB2EB0FD8A76BB8F827216B6B77</string>
-				<string>29586E6E3C8D6F62D117FA1684C911AF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>29586E6E3C8D6F62D117FA1684C911AF</key>
+		<key>2A1A22564B85790956B510A22A192869</key>
 		<dict>
 			<key>fileRef</key>
-			<string>DA515AC0EAD292251DB45897A0357F3F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>298567F3EAD1DC9019608BF5E0832DE7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7609246999DCCF36274C1802BDB60E49</string>
+			<string>EC2E8EC0507A635292B84A9E9C3C5702</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -491,20 +285,19 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>2BDB279BC32F0441F7EC2108732173A4</key>
+		<key>2C6E2D2DB2E5B394E5038166724CCAAA</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>F2E09D9CF24623D2BA9CF040D0CE967B</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NXOAuth2.h</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -520,98 +313,40 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>2EAD9880AE4E121C2EA96E103C82FC75</key>
+		<key>3170F3D4C09D6CECD65E0932504496F5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OLInstagramLoginWebViewController.h</string>
 			<key>path</key>
-			<string>NXOAuth2Client.xcconfig</string>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramLoginWebViewController.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2F603E30DC05C00DA356E6A85631BB91</key>
+		<key>34354026FD98F4FA0D7B00088F92C627</key>
 		<dict>
 			<key>fileRef</key>
-			<string>EBF8926875AB7F07EBCE055DA0DB6224</string>
+			<string>9AB25A5297B1F75B0D46151AAF3B3883</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
 		</dict>
-		<key>2F7BBFF8BF4CC98BED51CD1DD58F15C1</key>
+		<key>3E4E89230EF59BC255123B67864ACF77</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>NXOAuth2PostBodyStream.h</string>
+			<string>Foundation.framework</string>
 			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2PostBodyStream.h</string>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>328C7497183ADCC4506859153977FF38</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NXOAuth2Client-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32FC2AA1106051CD3D9803CFF3801301</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NXOAuth2AccountStore.h</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2AccountStore.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3465B9D9957AA955034749DDBF22A3EA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7970D127271F3773E10B1FE5E8BC17D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3AE3D4CD9960B3471E2E445470807E92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E23FC181216C53A1564FB3DE18FE112B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
+			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>40484E31DDD0C7B0B23721F64C87B9D4</key>
 		<dict>
@@ -626,123 +361,33 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>41B74D00D5AA6415C3352F7CFCC99DA1</key>
+		<key>44523078ADAD923DA96C5BDD0E75CEA4</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NXOAuth2Client.h</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2Client.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>41C8C6D20070E0F6298143E46ED0E896</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSData+NXOAuth2.m</string>
-			<key>path</key>
-			<string>Sources/NSData+NXOAuth2.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4256812106A48268EF47FC899908B4B5</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>1E85AABA23B5E543708FA4E03130F831</string>
-			<key>remoteInfo</key>
-			<string>NXOAuth2Client</string>
-		</dict>
-		<key>433CD3331B6C3787F473C941B61FC68F</key>
-		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>5A86A7991AF0B723B7571D408852AEBF</string>
+				<string>77A013979DB38F52282DF93F63D58F52</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>43E283C47E79FE66D338B3049661CEE8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A621ABDEA9D68879FFED7599EBD62460</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>44F191740E27CCCE532A4BF5E62318C4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>04E2DD09C80FFFC1B52FCE15DB4D392F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>45995A1C9596908132B5FC22E41B6821</key>
-		<dict>
-			<key>fileRef</key>
-			<string>23184A15200DFE888A0DAF6C8055F141</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>496F81C0BF46852BDB2FF6DD0613A705</key>
-		<dict>
-			<key>fileRef</key>
-			<string>41C8C6D20070E0F6298143E46ED0E896</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>4DB6AB6A48D0FCED8856BA6381196073</key>
+		<key>4A554C373EF393067D389F7B20988BD8</key>
 		<dict>
 			<key>buildConfigurationList</key>
-			<string>79AC55A91508519D9A4BC01ACEE19D48</string>
+			<string>0926B1FEFB084AC0D2608E411BFCBDB1</string>
 			<key>buildPhases</key>
 			<array>
-				<string>C77A7523CA2AAE9CD56DD6132C4095BA</string>
-				<string>C67E8CDD2BABC1C6EE5178C8B5F673D2</string>
+				<string>B16F69AC0E72DDA607A8D3455ECB088B</string>
+				<string>44523078ADAD923DA96C5BDD0E75CEA4</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
 			<key>dependencies</key>
 			<array>
-				<string>7FD2F5FCA909A76482113A433E951E96</string>
+				<string>CEE2F9BC73329283E1CBB008D4BABC71</string>
 			</array>
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
@@ -751,11 +396,11 @@
 			<key>productName</key>
 			<string>Pods-ImageEditor</string>
 			<key>productReference</key>
-			<string>A123767674DB6935496A1937B1037BC0</string>
+			<string>6BCA966F7636E31822019C3B111FB363</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>500D8A03EC094F191312A68A1A093112</key>
+		<key>4DBE736CA60C6DE6E0F76563F553B7FB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -764,11 +409,32 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>NXOAuth2PostBodyStream.m</string>
+			<string>OLInstagramImagePickerConstants.m</string>
 			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2PostBodyStream.m</string>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImagePickerConstants.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>519A134D9AFD1DE9A1C48891F39847AF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B500255FED6745E8881EDF6F17AF0743</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>51F31E01AA07237B6A024B0DB0052D9C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D2DE96E63BABE829381D9B0CCA04B881</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>5A0C6FE968931D888F00C9EC18DDF5BC</key>
 		<dict>
@@ -838,19 +504,12 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>5A86A7991AF0B723B7571D408852AEBF</key>
+		<key>5A780C2D4915AAFAFE0B48EBADFB6960</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>0307982621563C439755B9BC0ED60A1A</string>
-				<string>60FA6CD62EB7A9C85C7DBBA20924D70A</string>
-			</array>
+			<key>fileRef</key>
+			<string>AD13E3A371789D347F83785F1776A9DE</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>5A876E04A3967A3168619C97CA3211C0</key>
 		<dict>
@@ -865,71 +524,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5B46959B711883A342F66AA89430292E</key>
+		<key>5B3EEAA7B725D0C780036C6A6270EACF</key>
 		<dict>
-			<key>fileRef</key>
-			<string>0307982621563C439755B9BC0ED60A1A</string>
+			<key>children</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>60FA6CD62EB7A9C85C7DBBA20924D70A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Security.framework</string>
+			<string>NXOAuth2Client</string>
 			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework</string>
+			<string>NXOAuth2Client</string>
 			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>65BE784125C793C5D0EC90A7DEC1BBE1</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5A876E04A3967A3168619C97CA3211C0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>67B47E511DCA3A06974DBCFE2B65D012</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0C5EA396DF5BC52261DF41E37DEC48AC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>68C38F0C89D87624E9C0D0C36BB2AF91</key>
+		<key>5CFAC7A09030534322128ADC5E5502AB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -937,12 +545,17 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSString+NXOAuth2.h</string>
 			<key>path</key>
-			<string>Sources/NSString+NXOAuth2.h</string>
+			<string>InstagramImagePicker-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62D8BDF351A51C2784CCB19748D0EC52</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4DBE736CA60C6DE6E0F76563F553B7FB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>6A495A0950491328AC8AF75CEE7AFCB3</key>
 		<dict>
@@ -957,6 +570,42 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>6BCA966F7636E31822019C3B111FB363</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-ImageEditor.a</string>
+			<key>path</key>
+			<string>libPods-ImageEditor.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7105D63C47E2D3CE0FF7ED6264A69CE4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>19A664A6FD012E8284110788FAFD87FD</string>
+				<string>2C6E2D2DB2E5B394E5038166724CCAAA</string>
+				<string>75A8DC92B08AC29B024D6EF4E00A02DB</string>
+				<string>E523DFEF4B35A39B18CD535C3EDA9BC6</string>
+				<string>51F31E01AA07237B6A024B0DB0052D9C</string>
+				<string>FBE8A613762147EB87FEFF0C0F2AEE91</string>
+				<string>808F75043172105947FDE7E50E24BFA3</string>
+				<string>91AE17D1499255BFDA90E4A976E87931</string>
+				<string>8BC490473F0B432B59677645FEC2B670</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>738FCE7E686172067BAFAFFAF5A59420</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -969,6 +618,20 @@
 			<string>Pods-ImageEditor-resources.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75A8DC92B08AC29B024D6EF4E00A02DB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B64B62D424BC0FC3F71AD87BCE70D0EC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>7609246999DCCF36274C1802BDB60E49</key>
 		<dict>
@@ -983,74 +646,36 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7970D127271F3773E10B1FE5E8BC17D8</key>
+		<key>77A013979DB38F52282DF93F63D58F52</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>FCBBDD655EEB52F6ACFBAA1324BF7EBA</string>
-				<string>41C8C6D20070E0F6298143E46ED0E896</string>
-				<string>68C38F0C89D87624E9C0D0C36BB2AF91</string>
-				<string>0AFBB8793EBA95C785BEF1C6BF0C0DA7</string>
-				<string>07C10420101ED193343A792F9DAE112D</string>
-				<string>EBF8926875AB7F07EBCE055DA0DB6224</string>
-				<string>2BDB279BC32F0441F7EC2108732173A4</string>
-				<string>FEC9CA96283E4AEB785AECED1F332467</string>
-				<string>E611D314F52E0F1EBB657E9FA846D748</string>
-				<string>163995DE24CB5C539DFAD54A3D8D9028</string>
-				<string>13B6FF6D96E2EDF76B45744218EA1B50</string>
-				<string>0D5FE769484C2F3F8BC8B2EFDAEC8BEB</string>
-				<string>32FC2AA1106051CD3D9803CFF3801301</string>
-				<string>E5D1E31BDB871C089401EE016924BD1B</string>
-				<string>41B74D00D5AA6415C3352F7CFCC99DA1</string>
-				<string>888759CAD39772F95D46CBD948507523</string>
-				<string>030F0474A6754EF84364C12272EA4CC9</string>
-				<string>91F824F834ABC9556B3543B8E2B097EC</string>
-				<string>0C5EA396DF5BC52261DF41E37DEC48AC</string>
-				<string>A5F138F4D623FE202C2C00BDFB92D291</string>
-				<string>BAB9875721EA1EC3B186DF52F03700E0</string>
-				<string>7FBF5FD043D032B35FCBB027CC28D46B</string>
-				<string>04E2DD09C80FFFC1B52FCE15DB4D392F</string>
-				<string>E23FC181216C53A1564FB3DE18FE112B</string>
-				<string>E40E70B94C35C1C87DCFE02A079648A5</string>
-				<string>AFC1CC8AB8B7FB124F4F5E1F1811FB23</string>
-				<string>2F7BBFF8BF4CC98BED51CD1DD58F15C1</string>
-				<string>500D8A03EC094F191312A68A1A093112</string>
-				<string>23184A15200DFE888A0DAF6C8055F141</string>
-				<string>DA515AC0EAD292251DB45897A0357F3F</string>
-				<string>25CA6FEDF369206740019715F78BF4C3</string>
-				<string>D8712D4FCF08718899568CEE8D47D895</string>
-			</array>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7C382F9BA2119620E40875EC72E859B0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>NXOAuth2Client</string>
+			<string>UIImageView+InstagramFadeIn.h</string>
 			<key>path</key>
-			<string>NXOAuth2Client</string>
+			<string>InstagramImagePicker/InstagramImagePicker/UIImageView+InstagramFadeIn.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79AC55A91508519D9A4BC01ACEE19D48</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>65BE784125C793C5D0EC90A7DEC1BBE1</string>
-				<string>94FDAD6AC173A1550578B9A67F1DF9FF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
 		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>433CD3331B6C3787F473C941B61FC68F</string>
-				<string>3465B9D9957AA955034749DDBF22A3EA</string>
-				<string>243D06341EFCFD7FDE75E4B17B5A1FC1</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>B6BD9112B952C93F4C3D0DAB8A1F90E2</string>
+				<string>F46B302143F0FB2CF193CB2915DF171F</string>
 				<string>6A495A0950491328AC8AF75CEE7AFCB3</string>
 			</array>
 			<key>isa</key>
@@ -1079,70 +704,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7FBF5FD043D032B35FCBB027CC28D46B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NXOAuth2Constants.m</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2Constants.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7FD2F5FCA909A76482113A433E951E96</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>NXOAuth2Client</string>
-			<key>target</key>
-			<string>1E85AABA23B5E543708FA4E03130F831</string>
-			<key>targetProxy</key>
-			<string>4256812106A48268EF47FC899908B4B5</string>
-		</dict>
-		<key>876B49C130BA2283A8A226A296C950F3</key>
+		<key>808F75043172105947FDE7E50E24BFA3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>13B6FF6D96E2EDF76B45744218EA1B50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>888759CAD39772F95D46CBD948507523</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NXOAuth2Client.m</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2Client.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>89B6CFE588B981547314C4103D8B4675</key>
-		<dict>
-			<key>fileRef</key>
-			<string>60FA6CD62EB7A9C85C7DBBA20924D70A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8E0647A6DE92E993472445D8A9A31410</key>
-		<dict>
-			<key>fileRef</key>
-			<string>25CA6FEDF369206740019715F78BF4C3</string>
+			<string>3170F3D4C09D6CECD65E0932504496F5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1153,19 +718,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>9182B36F359CE9F54AD3CD24BE93CBC5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AFBB8793EBA95C785BEF1C6BF0C0DA7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>91F824F834ABC9556B3543B8E2B097EC</key>
+		<key>888E5EF3576ED76B2C34A4737C2BC176</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1174,13 +727,208 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>NXOAuth2Connection.h</string>
+			<string>OLInstagramImage.h</string>
 			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2Connection.h</string>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImage.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>94FDAD6AC173A1550578B9A67F1DF9FF</key>
+		<key>8A64DE6DCEB34A112D7BD268006D3960</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OLInstagramMediaRequest.m</string>
+			<key>path</key>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramMediaRequest.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8BC490473F0B432B59677645FEC2B670</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7C382F9BA2119620E40875EC72E859B0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8BF49072EC507BF318E3D587CD002E7E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F59C78231C356797F63ED2BF5936A28F</string>
+				<string>115F69A048D5519E8BC4D9E7DF386C6D</string>
+				<string>5CFAC7A09030534322128ADC5E5502AB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/InstagramImagePicker</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8F4AD1D93558AF36B5C858B6361D2D1B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>888E5EF3576ED76B2C34A4737C2BC176</string>
+				<string>AD13E3A371789D347F83785F1776A9DE</string>
+				<string>F2E09D9CF24623D2BA9CF040D0CE967B</string>
+				<string>EC2E8EC0507A635292B84A9E9C3C5702</string>
+				<string>B64B62D424BC0FC3F71AD87BCE70D0EC</string>
+				<string>9AB25A5297B1F75B0D46151AAF3B3883</string>
+				<string>98866A82AEDB110BAC4C7224F2735EF6</string>
+				<string>AA01481179874C44A430DA39AF185BCF</string>
+				<string>D2DE96E63BABE829381D9B0CCA04B881</string>
+				<string>4DBE736CA60C6DE6E0F76563F553B7FB</string>
+				<string>9CB6FEB70DF6B8EC2CDFDC70B8E71A89</string>
+				<string>190D797DFAAC886AD1CA0FC3AB1A442C</string>
+				<string>3170F3D4C09D6CECD65E0932504496F5</string>
+				<string>0D4BCCF16B5DFA35793D498B214958B6</string>
+				<string>C37B73051D84AD2345E541B488043A2C</string>
+				<string>8A64DE6DCEB34A112D7BD268006D3960</string>
+				<string>7C382F9BA2119620E40875EC72E859B0</string>
+				<string>B500255FED6745E8881EDF6F17AF0743</string>
+				<string>1D9282A0AE778252C7424A51BFD8D487</string>
+				<string>8BF49072EC507BF318E3D587CD002E7E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>InstagramImagePicker</string>
+			<key>path</key>
+			<string>InstagramImagePicker</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>91AE17D1499255BFDA90E4A976E87931</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C37B73051D84AD2345E541B488043A2C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>95AD1E9E883ACE64FACA9F3D400200E0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8A64DE6DCEB34A112D7BD268006D3960</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97135AFA5D0F4565C929F984867D8601</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F59C78231C356797F63ED2BF5936A28F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/InstagramImagePicker/InstagramImagePicker-prefix.pch</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>98866A82AEDB110BAC4C7224F2735EF6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OLInstagramImagePickerCell.h</string>
+			<key>path</key>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImagePickerCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9AB25A5297B1F75B0D46151AAF3B3883</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OLInstagramImageDownloader.m</string>
+			<key>path</key>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImageDownloader.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9CB6FEB70DF6B8EC2CDFDC70B8E71A89</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OLInstagramImagePickerController.h</string>
+			<key>path</key>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImagePickerController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9D96C8A09CC270EA73C3D86582675DD8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>OLInstagramLoginWebViewController.xib</string>
+			<key>path</key>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramLoginWebViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A09B24ADFD172E60B7EF56B0DF65DC4E</key>
 		<dict>
 			<key>baseConfigurationReference</key>
 			<string>F30687460CCD7ACC842BA251EAE14990</string>
@@ -1212,64 +960,134 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>9EB5C021CD0890A0F1A01E3BF4093E2B</key>
+		<key>A2ADE186138C3BAFB50FB21C46576DA9</key>
 		<dict>
-			<key>fileRef</key>
-			<string>2BDB279BC32F0441F7EC2108732173A4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>A123767674DB6935496A1937B1037BC0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
 			<key>includeInIndex</key>
-			<string>0</string>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
 			<key>name</key>
-			<string>libPods-ImageEditor.a</string>
+			<string>InstagramImagePicker.xcassets</string>
 			<key>path</key>
-			<string>libPods-ImageEditor.a</string>
+			<string>InstagramImagePicker/InstagramImagePicker/InstagramImagePicker.xcassets</string>
 			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A2CA9E6B2BDCF663BE218A1FE2F00269</key>
+		<key>AA01481179874C44A430DA39AF185BCF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OLInstagramImagePickerCell.m</string>
+			<key>path</key>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImagePickerCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AA5DCA5A1C54F49A837E7A70619AF6CA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>00EC169AAE99DC1A8F855B8FC0273A9E</string>
+				<string>5A780C2D4915AAFAFE0B48EBADFB6960</string>
+				<string>2A1A22564B85790956B510A22A192869</string>
+				<string>34354026FD98F4FA0D7B00088F92C627</string>
+				<string>C8A6D8694CBC8D8C3984E8479EAB442F</string>
+				<string>62D8BDF351A51C2784CCB19748D0EC52</string>
+				<string>C376D3BA7DF757138BF479502B0E70A8</string>
+				<string>0CB1E25EB1C3BB506F9EC7A251FDFA9B</string>
+				<string>95AD1E9E883ACE64FACA9F3D400200E0</string>
+				<string>519A134D9AFD1DE9A1C48891F39847AF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ABF977EB1E49B11448EB027174BFC1C3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>146C099F2043129AF80963F101AF0606</string>
+			<key>buildPhases</key>
+			<array>
+				<string>AA5DCA5A1C54F49A837E7A70619AF6CA</string>
+				<string>E5B28CFC89013DA24136711292EC0BED</string>
+				<string>7105D63C47E2D3CE0FF7ED6264A69CE4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>InstagramImagePicker</string>
+			<key>productName</key>
+			<string>InstagramImagePicker</string>
+			<key>productReference</key>
+			<string>F6C82CC53F38E34B398E53C63FA8C3D8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>AD13E3A371789D347F83785F1776A9DE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OLInstagramImage.m</string>
+			<key>path</key>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImage.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADDCA2FDE144D056E318D26A54DB17BB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E40E70B94C35C1C87DCFE02A079648A5</string>
+			<string>7609246999DCCF36274C1802BDB60E49</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
-		<key>A464A7711317466CE3622FFF75923DD4</key>
+		<key>B16F69AC0E72DDA607A8D3455ECB088B</key>
 		<dict>
-			<key>fileRef</key>
-			<string>FEC9CA96283E4AEB785AECED1F332467</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ADDCA2FDE144D056E318D26A54DB17BB</string>
+			</array>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>A5F138F4D623FE202C2C00BDFB92D291</key>
+		<key>B500255FED6745E8881EDF6F17AF0743</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIImageView+InstagramFadeIn.m</string>
+			<key>path</key>
+			<string>InstagramImagePicker/InstagramImagePicker/UIImageView+InstagramFadeIn.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B64B62D424BC0FC3F71AD87BCE70D0EC</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1278,65 +1096,32 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>NXOAuth2ConnectionDelegate.h</string>
+			<string>OLInstagramImageDownloader.h</string>
 			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2ConnectionDelegate.h</string>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImageDownloader.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A621ABDEA9D68879FFED7599EBD62460</key>
+		<key>B6BD9112B952C93F4C3D0DAB8A1F90E2</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>8F4AD1D93558AF36B5C858B6361D2D1B</string>
+				<string>5B3EEAA7B725D0C780036C6A6270EACF</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NXOAuth2Client-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB7A92BC0570218D33CB991B74709C56</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AFC1CC8AB8B7FB124F4F5E1F1811FB23</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>AFC1CC8AB8B7FB124F4F5E1F1811FB23</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>NXOAuth2PostBodyPart.m</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2PostBodyPart.m</string>
+			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B23A00A5ED73210D3BC7AA7F21EA9B1C</key>
+		<key>B9449623860A989BBF2F3A3155F7E9A3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>07C10420101ED193343A792F9DAE112D</string>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
 		<dict>
@@ -1355,7 +1140,40 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>BAB9875721EA1EC3B186DF52F03700E0</key>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E4E89230EF59BC255123B67864ACF77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C376D3BA7DF757138BF479502B0E70A8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>190D797DFAAC886AD1CA0FC3AB1A442C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C37B73051D84AD2345E541B488043A2C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1364,79 +1182,18 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>NXOAuth2Constants.h</string>
+			<string>OLInstagramMediaRequest.h</string>
 			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2Constants.h</string>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramMediaRequest.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BE98135A552FC71BF990DB90C060E208</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5B46959B711883A342F66AA89430292E</string>
-				<string>89B6CFE588B981547314C4103D8B4675</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C35FB79A52A53C86EC1AEE2BF99712CF</key>
+		<key>C8A6D8694CBC8D8C3984E8479EAB442F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>32FC2AA1106051CD3D9803CFF3801301</string>
+			<string>AA01481179874C44A430DA39AF185BCF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C67E8CDD2BABC1C6EE5178C8B5F673D2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FBBE60872C1FD842E0697DA05DEDBBFB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C77A7523CA2AAE9CD56DD6132C4095BA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>298567F3EAD1DC9019608BF5E0832DE7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C89A8A53A46D3DEF96F80C4034490CA4</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>203555FFD858DEF94D638D31EC450BF5</string>
-				<string>0E48CD3F72B2BDF585990510F50B1391</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
 		</dict>
 		<key>C95631BD5523102666D699CA8121ABD5</key>
 		<dict>
@@ -1451,33 +1208,44 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CDC229FCDA668D0077958EB1B48C03D7</key>
+		<key>CCC8245AB5BC51D24A2CA1A3854D487A</key>
 		<dict>
-			<key>fileRef</key>
-			<string>41B74D00D5AA6415C3352F7CFCC99DA1</string>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>ABF977EB1E49B11448EB027174BFC1C3</string>
+			<key>remoteInfo</key>
+			<string>InstagramImagePicker</string>
 		</dict>
-		<key>D27B1021ED5A281761C33D770E16A58D</key>
+		<key>CEE2F9BC73329283E1CBB008D4BABC71</key>
 		<dict>
-			<key>fileRef</key>
-			<string>2F7BBFF8BF4CC98BED51CD1DD58F15C1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>InstagramImagePicker</string>
+			<key>target</key>
+			<string>ABF977EB1E49B11448EB027174BFC1C3</string>
+			<key>targetProxy</key>
+			<string>CCC8245AB5BC51D24A2CA1A3854D487A</string>
+		</dict>
+		<key>D2DE96E63BABE829381D9B0CCA04B881</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OLInstagramImagePickerConstants.h</string>
+			<key>path</key>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImagePickerConstants.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
@@ -1505,7 +1273,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>243D06341EFCFD7FDE75E4B17B5A1FC1</string>
+			<string>F46B302143F0FB2CF193CB2915DF171F</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -1514,14 +1282,14 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>1E85AABA23B5E543708FA4E03130F831</string>
-				<string>4DB6AB6A48D0FCED8856BA6381196073</string>
+				<string>ABF977EB1E49B11448EB027174BFC1C3</string>
+				<string>4A554C373EF393067D389F7B20988BD8</string>
 			</array>
 		</dict>
-		<key>D48FA58A38ADC8CAF616EF9A472581E9</key>
+		<key>E523DFEF4B35A39B18CD535C3EDA9BC6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>91F824F834ABC9556B3543B8E2B097EC</string>
+			<string>98866A82AEDB110BAC4C7224F2735EF6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1532,109 +1300,20 @@
 				</array>
 			</dict>
 		</dict>
-		<key>D6DF5A496FD858DE4036ACE9A912C895</key>
-		<dict>
-			<key>fileRef</key>
-			<string>888759CAD39772F95D46CBD948507523</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>D8712D4FCF08718899568CEE8D47D895</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2EAD9880AE4E121C2EA96E103C82FC75</string>
-				<string>A621ABDEA9D68879FFED7599EBD62460</string>
-				<string>328C7497183ADCC4506859153977FF38</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/NXOAuth2Client</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA515AC0EAD292251DB45897A0357F3F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NXOAuth2Request.m</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2Request.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB3B2657B0DBB2EC8F74D1A602582051</key>
-		<dict>
-			<key>fileRef</key>
-			<string>68C38F0C89D87624E9C0D0C36BB2AF91</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>DC259A831AAD609D68A368E16228D4F5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>030F0474A6754EF84364C12272EA4CC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>E00EFA61CB6BE390356A2D41B9BACC8C</key>
+		<key>E5B28CFC89013DA24136711292EC0BED</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>1CC5AACA78908ED08FB968E551C9E907</string>
-				<string>DB3B2657B0DBB2EC8F74D1A602582051</string>
-				<string>B23A00A5ED73210D3BC7AA7F21EA9B1C</string>
-				<string>9EB5C021CD0890A0F1A01E3BF4093E2B</string>
-				<string>A464A7711317466CE3622FFF75923DD4</string>
-				<string>E66FF19936CA6EF7FF4BF3E13EE0D7D7</string>
-				<string>1FC05C99BA48029B527FC7482BBA87D5</string>
-				<string>C35FB79A52A53C86EC1AEE2BF99712CF</string>
-				<string>CDC229FCDA668D0077958EB1B48C03D7</string>
-				<string>DC259A831AAD609D68A368E16228D4F5</string>
-				<string>D48FA58A38ADC8CAF616EF9A472581E9</string>
-				<string>1D56CA0D7139A4028B93CA7E074AEDDF</string>
-				<string>006CA7289952B00BA727BEF299ECE8BD</string>
-				<string>44F191740E27CCCE532A4BF5E62318C4</string>
-				<string>A2CA9E6B2BDCF663BE218A1FE2F00269</string>
-				<string>D27B1021ED5A281761C33D770E16A58D</string>
-				<string>45995A1C9596908132B5FC22E41B6821</string>
-				<string>8E0647A6DE92E993472445D8A9A31410</string>
+				<string>B9449623860A989BBF2F3A3155F7E9A3</string>
 			</array>
 			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
+			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>E23FC181216C53A1564FB3DE18FE112B</key>
+		<key>EC2E8EC0507A635292B84A9E9C3C5702</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1643,13 +1322,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>NXOAuth2FileStreamWrapper.m</string>
+			<string>OLInstagramImageDownloadDelegate.m</string>
 			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2FileStreamWrapper.m</string>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImageDownloadDelegate.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E40E70B94C35C1C87DCFE02A079648A5</key>
+		<key>F2E09D9CF24623D2BA9CF040D0CE967B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1658,68 +1337,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>NXOAuth2PostBodyPart.h</string>
+			<string>OLInstagramImageDownloadDelegate.h</string>
 			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2PostBodyPart.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5D1E31BDB871C089401EE016924BD1B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NXOAuth2AccountStore.m</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2AccountStore.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E611D314F52E0F1EBB657E9FA846D748</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NXOAuth2AccessToken.m</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2AccessToken.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E66FF19936CA6EF7FF4BF3E13EE0D7D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0D5FE769484C2F3F8BC8B2EFDAEC8BEB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>EBF8926875AB7F07EBCE055DA0DB6224</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSURL+NXOAuth2.m</string>
-			<key>path</key>
-			<string>Sources/NSURL+NXOAuth2.m</string>
+			<string>InstagramImagePicker/InstagramImagePicker/OLInstagramImageDownloadDelegate.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1736,17 +1356,32 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F61B50E72560137C1BAB08BB5E0F704B</key>
+		<key>F46B302143F0FB2CF193CB2915DF171F</key>
 		<dict>
-			<key>fileRef</key>
-			<string>E611D314F52E0F1EBB657E9FA846D748</string>
+			<key>children</key>
+			<array>
+				<string>F6C82CC53F38E34B398E53C63FA8C3D8</string>
+				<string>6BCA966F7636E31822019C3B111FB363</string>
+			</array>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F59C78231C356797F63ED2BF5936A28F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>InstagramImagePicker.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F63BDDA7EED6F7151EBF0BB35A38BB00</key>
 		<dict>
@@ -1761,54 +1396,34 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F80352DA4E8B5745EFBBAE0A619D62CD</key>
+		<key>F6C82CC53F38E34B398E53C63FA8C3D8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libInstagramImagePicker.a</string>
+			<key>path</key>
+			<string>libInstagramImagePicker.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FBE8A613762147EB87FEFF0C0F2AEE91</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7FBF5FD043D032B35FCBB027CC28D46B</string>
+			<string>9CB6FEB70DF6B8EC2CDFDC70B8E71A89</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
 			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
 			</dict>
-		</dict>
-		<key>FBBE60872C1FD842E0697DA05DEDBBFB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0307982621563C439755B9BC0ED60A1A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCBBDD655EEB52F6ACFBAA1324BF7EBA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSData+NXOAuth2.h</string>
-			<key>path</key>
-			<string>Sources/NSData+NXOAuth2.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FEC9CA96283E4AEB785AECED1F332467</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NXOAuth2AccessToken.h</string>
-			<key>path</key>
-			<string>Sources/OAuth2Client/NXOAuth2AccessToken.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

@@ -13,4 +13,6 @@
 
 + (APICommunicator*)sharedInstance;
 
+- (void)authorize;
+
 @end
