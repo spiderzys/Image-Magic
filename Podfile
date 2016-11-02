@@ -4,8 +4,14 @@
 # use_frameworks!
 
 target 'ImageEditor' do
-   pod 'NXOAuth2Client', '~> 1.2.8'
+
 end
 
+target 'ImageEditorTests' do
 
+end
+
+target 'ImageEditorUITests' do
+
+end
 
