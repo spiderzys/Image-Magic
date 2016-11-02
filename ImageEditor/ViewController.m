@@ -21,21 +21,8 @@
    
     [PhotoRequester sharedInstance].delegate = self;
  
-    [[NSURLSession sharedSession]dataTaskWithURL:[NSURL URLWithString:@"http://zouy34.tumblr.com/image/152627928800"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-       
-        if(data) {
-            UIImage *image = [UIImage imageWithData:data];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                 _backgroundImageView.image = image;
-            });
-           
-        }
-        else{
-            NSLog(@"no data");
-        }
-        
-    }];
     
+
     
     // Do any additional setup after loading the view, typically from a nib.
 }

@@ -33,13 +33,4 @@
     return sharedInstance;
 }
 
-
-#pragma api method
-
-- (void)requestToken{
-    
-}
-
-
-
 @end

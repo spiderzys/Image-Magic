@@ -8,8 +8,6 @@
 
 #import "PhotoRequester.h"
 #import "APICommunicator.h"
-
-
 @implementation PhotoRequester{
     
 }
@@ -68,15 +66,8 @@ didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info{
 
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
-    [picker dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    
 }
-
-
-
-
-#pragma Singleton
 
 
 

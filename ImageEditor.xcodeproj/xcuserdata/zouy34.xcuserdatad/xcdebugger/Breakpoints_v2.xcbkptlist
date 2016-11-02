@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageEditor/PhotoRequester.m"
-            timestampString = "499747853.913244"
+            timestampString = "499239304.671665"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "+sharedInstance"
             landmarkType = "7">
             <Locations>
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageEditor/ViewController.m"
-            timestampString = "499669640.688638"
+            timestampString = "499239683.148523"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "-didReceiveMemoryWarning"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-didFinishRequestPhoto:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

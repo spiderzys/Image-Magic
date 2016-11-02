@@ -13,6 +13,4 @@
 
 + (APICommunicator*)sharedInstance;
 
-- (void)requestToken;
-
 @end

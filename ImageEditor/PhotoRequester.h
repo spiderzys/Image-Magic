@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
 // this class will request photo from specified source
 typedef NS_ENUM(NSInteger,photoSource){
     photoLibrary = 1,
