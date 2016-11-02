@@ -13,17 +13,11 @@
 
 @end
 
-@implementation ViewController 
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-   
     [PhotoRequester sharedInstance].delegate = self;
- 
-    
-
-    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -39,12 +33,12 @@
 - (IBAction)cameraPhotoClicked:(UIButton *)sender {
     [[PhotoRequester sharedInstance] requestPhotoViaSource:camera];
 }
-- (IBAction)InstagramButtonClicked:(UIButton *)sender {
-    [[PhotoRequester sharedInstance] requestPhotoViaSource:instagram];
+- (IBAction)TumblrButtonClicked:(UIButton *)sender {
+    [[PhotoRequester sharedInstance] requestPhotoViaSource:tumblr];
 }
 
 - (void)didFinishRequestPhoto:(UIImage*)photo{
-
+    
     _backgroundImageView.image = photo;
     
 }

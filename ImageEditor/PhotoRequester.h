@@ -12,7 +12,7 @@
 typedef NS_ENUM(NSInteger,photoSource){
     photoLibrary = 1,
     camera,
-    instagram
+    tumblr
 };
 
 
