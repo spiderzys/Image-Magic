@@ -7,7 +7,7 @@
 //
 
 #import "PhotoRequester.h"
-#import "APICommunicator.h"
+#import "TumblrImageViewController.h"
 
 @implementation PhotoRequester{
     
@@ -26,10 +26,10 @@
             case photoLibrary:
                 
                 [self requestLocalPhotoViaSourceTyple:UIImagePickerControllerSourceTypePhotoLibrary];
-                
+                break;
             case camera:
                 [self requestLocalPhotoViaSourceTyple:UIImagePickerControllerSourceTypeCamera];
-                
+                break;
             default:
                 [self requestPhotoViaTumblr];
         }
@@ -45,8 +45,8 @@
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.delegate = self;
         [picker setSourceType:SourceType];
-        picker.allowsEditing = false;
-        [_delegate presentViewController:picker animated:true completion:nil];
+        picker.allowsEditing = NO;
+        [_delegate presentViewController:picker animated:YES completion:nil];
     }
     
     
@@ -55,15 +55,24 @@
 
 - (void)requestPhotoViaTumblr{
     
- 
+    [_delegate presentViewController:[TumblrImageViewController sharedInstance] animated:YES completion:^{
+        
+    }];
+    
+    
+}
+
+#pragma TumblrImageViewControllerDelegate method
+
+- (void)didFinishPickImageView:(UIImage *)image{
+    [[TumblrImageViewController sharedInstance]dismissViewControllerAnimated:YES completion:^{
+      [_delegate didFinishRequestPhoto:image];
+    }];
     
 }
 
 
-
-
-
-#pragma UIImagePickerControllerDelegate
+#pragma UIImagePickerControllerDelegate method
 
 
 - (void)imagePickerController:(UIImagePickerController *)picker
@@ -92,7 +101,6 @@ didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info{
     
     // sharedInstance is the only object for access
     static PhotoRequester *sharedInstance = nil;
-    NSLog(@"%@",sharedInstance);
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[PhotoRequester alloc] init];
@@ -106,7 +114,6 @@ didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info{
     
     // alloc init method  override to avoid new object init
     static PhotoRequester *sharedInstance = nil;
-    NSLog(@"%@",sharedInstance);
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [super allocWithZone:zone];

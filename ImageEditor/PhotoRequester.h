@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "TumblrImageViewController.h"
 // this class will request photo from specified source
 typedef NS_ENUM(NSInteger,photoSource){
     photoLibrary = 1,
@@ -20,12 +21,12 @@ typedef NS_ENUM(NSInteger,photoSource){
 - (void)didFinishRequestPhoto:(UIImage*)photo;
 @end
 
-@interface PhotoRequester : NSObject <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface PhotoRequester : NSObject <UIImagePickerControllerDelegate,UINavigationControllerDelegate, TumblrImageViewControllerDelegate>
 
 @property (nonatomic, weak) UIViewController<PhotoRequestDelegate>* delegate; // only view controller can be the delegate
 
 + (PhotoRequester*)sharedInstance; // singleton
-- (void)requestPhotoViaSource:(enum photoSource)source;  // open interface for initializing a  request
+- (void)requestPhotoViaSource:(enum photoSource)source;  // open interface for initializing a request
 
 
 @end

@@ -35,7 +35,7 @@
                                     <constraint firstAttribute="width" constant="55" id="Lbk-uo-xaG"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="xxxxxxxx" image="instagram"/>
+                                <state key="normal" image="instagram"/>
                                 <connections>
                                     <action selector="TumblrButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKA-rs-Ymd"/>
                                 </connections>
@@ -88,8 +88,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="vLC-cO-6oC"/>
                                 <exclude reference="Z1u-S6-Cok"/>
+                                <exclude reference="vLC-cO-6oC"/>
                             </mask>
                         </variation>
                     </view>

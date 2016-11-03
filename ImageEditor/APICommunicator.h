@@ -8,9 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger,API){
+    TUMBLR = 1
+};
+
+@protocol APICommunicatorDelegate <NSObject>  // the delegate should know what to do after request
+- (void)didFinishAccessData:(NSData*)data;
+@end
+
+
 @interface APICommunicator : NSObject
 
+@property (nonatomic, weak) id<APICommunicatorDelegate> delegate; // only view controller can be the delegate
 
-+ (APICommunicator*)sharedInstance;
+//+ (APICommunicator*)sharedInstance;
+
+//- (void)requestPhotoDataFromSource:(enum API)source;
+
+- (void)requestDataFromTumblrBlog:(NSString*)blog;
+
 
 @end
