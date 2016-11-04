@@ -12,8 +12,12 @@
 - (void)didFinishPickImageView:(UIImage*)image;
 @end
 
-@interface TumblrImageViewController : UIViewController <APICommunicatorDelegate>
+@interface TumblrImageViewController : UIViewController <APICommunicatorDelegate, UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *imageCollectionView;
+@property (weak, nonatomic) IBOutlet UISearchBar *blogSearchBar;
+
+
+
 + (TumblrImageViewController*)sharedInstance;
 
 

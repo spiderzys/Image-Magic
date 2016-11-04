@@ -22,7 +22,7 @@
     
     
     if (_delegate != nil){
-        switch (source) {
+        switch (source) {  // request photo from specified source
             case photoLibrary:
                 
                 [self requestLocalPhotoViaSourceTyple:UIImagePickerControllerSourceTypePhotoLibrary];
@@ -40,7 +40,7 @@
 
 
 - (void)requestLocalPhotoViaSourceTyple:(UIImagePickerControllerSourceType)SourceType{
-    
+    // from photo lib or camera
     if([UIImagePickerController isSourceTypeAvailable:SourceType]){
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.delegate = self;
@@ -54,7 +54,7 @@
 
 
 - (void)requestPhotoViaTumblr{
-    
+    // from tumblr blog
     [_delegate presentViewController:[TumblrImageViewController sharedInstance] animated:YES completion:^{
         
     }];
@@ -65,6 +65,7 @@
 #pragma TumblrImageViewControllerDelegate method
 
 - (void)didFinishPickImageView:(UIImage *)image{
+    // dismiss tumblr picker and set background image
     [[TumblrImageViewController sharedInstance]dismissViewControllerAnimated:YES completion:^{
       [_delegate didFinishRequestPhoto:image];
     }];
@@ -77,7 +78,7 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker
 didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info{
-    
+    // dismiss picker and set background image
     
     UIImage *image = (UIImage*)[info valueForKey:UIImagePickerControllerOriginalImage];
     [picker dismissViewControllerAnimated:YES completion:^{
@@ -87,6 +88,7 @@ didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info{
 
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    // dismiss picker
     [picker dismissViewControllerAnimated:YES completion:^{
         
     }];

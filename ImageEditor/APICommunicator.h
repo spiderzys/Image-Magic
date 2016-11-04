@@ -13,7 +13,7 @@ typedef NS_ENUM(NSInteger,API){
 };
 
 @protocol APICommunicatorDelegate <NSObject>  // the delegate should know what to do after request
-- (void)didFinishAccessData:(NSData*)data;
+- (void)didGetPhotoUrls:(NSMutableArray*)photoUrlArray;
 @end
 
 
@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger,API){
 
 //- (void)requestPhotoDataFromSource:(enum API)source;
 
-- (void)requestDataFromTumblrBlog:(NSString*)blog;
+- (void)requestDataFromTumblrBlog:(NSString*)blog InPage:(int)page;
 
 
 @end

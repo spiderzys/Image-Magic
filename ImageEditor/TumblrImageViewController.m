@@ -7,10 +7,14 @@
 //
 
 #import "TumblrImageViewController.h"
+#import "TumblrImageCollectionViewCell.h"
 
 @interface TumblrImageViewController (){
-    NSArray *imageArray;
+    NSMutableArray *imageArray;
+    NSCache *imageCache;
     APICommunicator *apiCommunicator;
+    int numOfLoadedPages;
+    NSString *blogName;
 }
 
 @end
@@ -19,9 +23,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    imageCache = [NSCache new];
+    imageArray = [NSMutableArray new];
     apiCommunicator = [APICommunicator new];
     apiCommunicator.delegate = self;
     [_imageCollectionView registerNib:[UINib nibWithNibName:@"TumblrImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"tumblr"];
+    numOfLoadedPages = 0;
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -55,19 +63,26 @@
 }
 */
 
-- (void)searchBlog:(NSString*)blog{
-    
-    [apiCommunicator requestDataFromTumblrBlog:blog];
+- (void)searchBlog:(NSString*)blog InPage:(int)page{
+    [apiCommunicator requestDataFromTumblrBlog:blog InPage:page];
 }
 
 
+
+- (void)loadImagesFromBlog:(NSString*)blog{
+    [imageCache removeAllObjects];
+    numOfLoadedPages = 1;
+    [self searchBlog:blog InPage:numOfLoadedPages];
+}
+
 #pragma SearchBar delegate method
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    NSString* keywords = [searchBar text];
+    blogName = [searchBar text];
     [searchBar resignFirstResponder];
     searchBar.userInteractionEnabled = NO;
-    [self searchBlog:keywords];
-    searchBar.userInteractionEnabled = YES;
+    
+    [self loadImagesFromBlog:blogName];
+    
     
 }
 
@@ -75,11 +90,17 @@
     [searchBar resignFirstResponder];
 }
 
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
 
 #pragma APICommunicatorDelegate
 
-- (void)didFinishAccessData:(NSData*)data{
-    
+- (void)didGetPhotoUrls:(NSMutableArray *)photoUrlArray{
+    _blogSearchBar.userInteractionEnabled = YES;
 }
 
 
@@ -97,6 +118,27 @@
 #pragma Image ColletionView data delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
+    
+}
+
+
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    return  CGSizeMake(44,44);
+}
+
+
+#pragma scrollview delegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if(scrollView.contentOffset.y < -100){
+        [self loadImagesFromBlog:blogName];
+    }
+    
+    else if(scrollView.contentOffset.y > imageArray.count) {
+        [self searchBlog:blogName InPage:++numOfLoadedPages];
+    }
     
 }
 

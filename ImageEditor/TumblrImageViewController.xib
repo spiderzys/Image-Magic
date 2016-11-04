@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TumblrImageViewController">
             <connections>
+                <outlet property="blogSearchBar" destination="NiP-1I-gDw" id="EDU-1l-EDJ"/>
                 <outlet property="imageCollectionView" destination="w1n-3Q-0lc" id="MvP-dW-hFh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,28 +21,18 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="NiP-1I-gDw">
-                    <rect key="frame" x="85" y="15" width="205" height="44"/>
+                <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NiP-1I-gDw">
+                    <rect key="frame" x="20" y="15" width="335" height="44"/>
                     <textInputTraits key="textInputTraits"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="LEb-tE-jaT"/>
                     </connections>
                 </searchBar>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3T-wL-vDp">
-                    <rect key="frame" x="310" y="29" width="60" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="g8a-en-fYe"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                    <state key="normal" title="Done">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="w1n-3Q-0lc">
                     <rect key="frame" x="0.0" y="67" width="375" height="600"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SMB-UG-F5M">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="SMB-UG-F5M">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -52,28 +43,12 @@
                         <outlet property="delegate" destination="-1" id="PcO-E1-bve"/>
                     </connections>
                 </collectionView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTc-Rf-eMR">
-                    <rect key="frame" x="5" y="29" width="60" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="60" id="N4W-QN-Il7"/>
-                        <constraint firstAttribute="height" constant="30" id="sTi-dI-CSG"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                    <state key="normal" title="Cancel">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="s3T-wL-vDp" firstAttribute="bottom" secondItem="gTc-Rf-eMR" secondAttribute="bottom" id="A5J-Eo-csG"/>
-                <constraint firstItem="NiP-1I-gDw" firstAttribute="bottom" secondItem="gTc-Rf-eMR" secondAttribute="bottom" id="I7M-dv-rnp"/>
-                <constraint firstItem="gTc-Rf-eMR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="P0v-VE-Ykg"/>
-                <constraint firstItem="NiP-1I-gDw" firstAttribute="leading" secondItem="gTc-Rf-eMR" secondAttribute="trailing" constant="20" id="emN-iR-ga6"/>
-                <constraint firstItem="s3T-wL-vDp" firstAttribute="width" secondItem="gTc-Rf-eMR" secondAttribute="width" id="fPl-nq-pBE"/>
-                <constraint firstItem="s3T-wL-vDp" firstAttribute="leading" secondItem="NiP-1I-gDw" secondAttribute="trailing" constant="20" id="jOY-ar-oR6"/>
+                <constraint firstAttribute="trailing" secondItem="NiP-1I-gDw" secondAttribute="trailing" constant="20" id="Oxy-0Q-wVo"/>
+                <constraint firstItem="NiP-1I-gDw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="QEw-C2-6i3"/>
                 <constraint firstItem="NiP-1I-gDw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="mZK-eH-pxr"/>
-                <constraint firstAttribute="trailing" secondItem="s3T-wL-vDp" secondAttribute="trailing" constant="5" id="x9z-RE-nh3"/>
             </constraints>
             <point key="canvasLocation" x="26.5" y="51.5"/>
         </view>
