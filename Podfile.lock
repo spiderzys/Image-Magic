@@ -22,10 +22,12 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.0)
   - GoogleToolboxForMac/NSData+zlib (2.1.0):
     - GoogleToolboxForMac/Defines (= 2.1.0)
+  - LMGPUImage (0.1.9)
 
 DEPENDENCIES:
   - Firebase/AdMob
   - Firebase/Core
+  - LMGPUImage
 
 SPEC CHECKSUMS:
   Firebase: ff77ffb77b317c3720fef57a60e9335cebf962e6
@@ -36,5 +38,6 @@ SPEC CHECKSUMS:
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
+  LMGPUImage: 8e2e5d0f7065953eb7812de842db4c87d59abf09
 
 COCOAPODS: 0.39.0

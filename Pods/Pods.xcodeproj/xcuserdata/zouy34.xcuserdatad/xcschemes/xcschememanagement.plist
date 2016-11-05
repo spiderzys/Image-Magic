@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LMGPUImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ImageEditor.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BF4C8236BA116DEC930DBDCF9917E330</key>
+		<key>6620CD84FF6B5D1F67FBB9B9B810B312</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FDBAA4368D70CFC7445C2B31AF7A348E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
