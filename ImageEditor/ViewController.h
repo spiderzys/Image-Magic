@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "PhotoRequester.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
+
 @interface ViewController : UIViewController <PhotoRequestDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
+@property (weak, nonatomic) IBOutlet GADBannerView *bannderView;
 
 @end
 

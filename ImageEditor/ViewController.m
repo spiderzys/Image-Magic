@@ -16,7 +16,15 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
+    [_bannderView setRootViewController:self];
+    //_bannderView.adUnitID = @"ca-app-pub-1134676718735499~2657091162";
+    GADRequest *request = [GADRequest request];
+    [_bannderView loadRequest:request];
+    request.testDevices = @[ kGADSimulatorID ];
+    
     [PhotoRequester sharedInstance].delegate = self;
     
     // Do any additional setup after loading the view, typically from a nib.
