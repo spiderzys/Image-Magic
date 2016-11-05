@@ -6,15 +6,22 @@
 //  Copyright © 2016 YANGSHENG ZOU. All rights reserved.
 //
 
+
+
 #import "TumblrImageViewController.h"
 #import "TumblrImageCollectionViewCell.h"
 
+#define NUM_COLUMN 4
+
+
+
 @interface TumblrImageViewController (){
-    NSMutableArray *imageArray;
+    NSMutableArray *imageUrlArray;
     NSCache *imageCache;
     APICommunicator *apiCommunicator;
-    int numOfLoadedPages;
+//    int numOfLoadedPages;
     NSString *blogName;
+    NSString *reuseIdentifier;
 }
 
 @end
@@ -22,18 +29,21 @@
 @implementation TumblrImageViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     imageCache = [NSCache new];
-    imageArray = [NSMutableArray new];
+    imageUrlArray = [NSMutableArray new];
     apiCommunicator = [APICommunicator new];
     apiCommunicator.delegate = self;
-    [_imageCollectionView registerNib:[UINib nibWithNibName:@"TumblrImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"tumblr"];
-    numOfLoadedPages = 0;
+    reuseIdentifier = @"tumblr";
+    [_imageCollectionView registerNib:[UINib nibWithNibName:@"TumblrImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
+  //  numOfLoadedPages = 0;
     
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -54,29 +64,35 @@
 
 
 /*
-#pragma mark - Navigation
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (void)searchBlog:(NSString*)blog InPage:(int)page{
+    
     [apiCommunicator requestDataFromTumblrBlog:blog InPage:page];
 }
 
 
 
 - (void)loadImagesFromBlog:(NSString*)blog{
+    [imageUrlArray removeAllObjects];
     [imageCache removeAllObjects];
-    numOfLoadedPages = 1;
-    [self searchBlog:blog InPage:numOfLoadedPages];
+ //   numOfLoadedPages = 1;
+    [self searchBlog:blog InPage:1];
 }
+
+
 
 #pragma SearchBar delegate method
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    
     blogName = [searchBar text];
     [searchBar resignFirstResponder];
     searchBar.userInteractionEnabled = NO;
@@ -87,6 +103,7 @@
 }
 
 - (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
+    
     [searchBar resignFirstResponder];
 }
 
@@ -100,25 +117,73 @@
 #pragma APICommunicatorDelegate
 
 - (void)didGetPhotoUrls:(NSMutableArray *)photoUrlArray{
-    _blogSearchBar.userInteractionEnabled = YES;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        if(imageUrlArray.count == 0){
+            
+            imageUrlArray = [NSMutableArray arrayWithArray:photoUrlArray];
+            [_imageCollectionView reloadData];
+        }
+        else {
+            
+            [imageUrlArray addObjectsFromArray:photoUrlArray];
+            
+        }
+        _blogSearchBar.userInteractionEnabled = YES;
+        _imageCollectionView.scrollEnabled = YES;
+    });
 }
 
 
 #pragma Image ColletionView data source
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return imageArray.count;
+    
+    return imageUrlArray.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
+    
+    TumblrImageCollectionViewCell *imageCell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    imageCell.tumblrImageView.image = nil;
+    NSString* imageCacheKey = [NSString stringWithFormat:@"%ld,%ld",(long)indexPath.section,(long)indexPath.row];
+    NSData* imageData = [imageCache objectForKey:imageCacheKey];
+    
+    if (imageData) {
+        
+        imageCell.tumblrImageView.image = [UIImage imageWithData:imageData];
+    }
+    else {
+        NSURL *imageUrl = imageUrlArray[indexPath.row];
+        [[[NSURLSession sharedSession]dataTaskWithURL:imageUrl completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            TumblrImageCollectionViewCell *updateCell = (TumblrImageCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
+            if(data!=nil){
+                
+                [imageCache setObject:data forKey:imageCacheKey];
+                if(updateCell!=nil){
+                    
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        updateCell.tumblrImageView.image = [UIImage imageWithData:data];
+                    });
+                
+                    
+                }
+            }
+            
+            
+        }]resume];
+        
+    }
+    return imageCell;
 }
 
 
 #pragma Image ColletionView data delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    
+    TumblrImageCollectionViewCell *imageCell = (TumblrImageCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
+    UIImage *image = [imageCell.tumblrImageView.image copy];
+    [_delegate tumblrImagePickerController:self didFinishPickingImage:image];
 }
 
 
@@ -126,19 +191,22 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return  CGSizeMake(44,44);
+    CGFloat cellWidth = collectionView.bounds.size.width/NUM_COLUMN;
+    return CGSizeMake(cellWidth, cellWidth);
 }
-
 
 #pragma scrollview delegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    NSLog(@"%f",scrollView.contentOffset.y);
+    
+    
     if(scrollView.contentOffset.y < -100){
+        _imageCollectionView.scrollEnabled = NO;
         [self loadImagesFromBlog:blogName];
     }
     
-    else if(scrollView.contentOffset.y > imageArray.count) {
-        [self searchBlog:blogName InPage:++numOfLoadedPages];
-    }
+   
     
 }
 

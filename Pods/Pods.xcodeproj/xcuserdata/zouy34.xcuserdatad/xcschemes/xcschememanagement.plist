@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>NXOAuth2Client.xcscheme</key>
+		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1E85AABA23B5E543708FA4E03130F831</key>
+		<key>12D0BE9AB489DA96C874BA686EAC1EEE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4DB6AB6A48D0FCED8856BA6381196073</key>
+		<key>BF4C8236BA116DEC930DBDCF9917E330</key>
 		<dict>
 			<key>primary</key>
 			<true/>

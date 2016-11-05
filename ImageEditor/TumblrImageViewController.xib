@@ -21,17 +21,16 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NiP-1I-gDw">
-                    <rect key="frame" x="20" y="15" width="335" height="44"/>
+                <searchBar contentMode="redraw" placeholder="Input Blog Name" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NiP-1I-gDw">
+                    <rect key="frame" x="20" y="16" width="335" height="44"/>
                     <textInputTraits key="textInputTraits"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="LEb-tE-jaT"/>
                     </connections>
                 </searchBar>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="w1n-3Q-0lc">
-                    <rect key="frame" x="0.0" y="67" width="375" height="600"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="w1n-3Q-0lc">
+                    <rect key="frame" x="0.0" y="66" width="375" height="601"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="SMB-UG-F5M">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -44,11 +43,15 @@
                     </connections>
                 </collectionView>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="NiP-1I-gDw" secondAttribute="trailing" constant="20" id="Oxy-0Q-wVo"/>
                 <constraint firstItem="NiP-1I-gDw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="QEw-C2-6i3"/>
-                <constraint firstItem="NiP-1I-gDw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="mZK-eH-pxr"/>
+                <constraint firstItem="w1n-3Q-0lc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Sxu-Z9-hh0"/>
+                <constraint firstItem="w1n-3Q-0lc" firstAttribute="top" secondItem="NiP-1I-gDw" secondAttribute="bottom" constant="6" id="WYt-fq-0BR"/>
+                <constraint firstAttribute="trailing" secondItem="w1n-3Q-0lc" secondAttribute="trailing" id="d8T-Aa-2rm"/>
+                <constraint firstAttribute="bottom" secondItem="w1n-3Q-0lc" secondAttribute="bottom" id="jMl-Gp-UOp"/>
+                <constraint firstItem="NiP-1I-gDw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="mZK-eH-pxr"/>
             </constraints>
             <point key="canvasLocation" x="26.5" y="51.5"/>
         </view>

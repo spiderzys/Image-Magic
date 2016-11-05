@@ -55,6 +55,7 @@
 
 - (void)requestPhotoViaTumblr{
     // from tumblr blog
+    [TumblrImageViewController sharedInstance].delegate = self;
     [_delegate presentViewController:[TumblrImageViewController sharedInstance] animated:YES completion:^{
         
     }];
@@ -64,9 +65,9 @@
 
 #pragma TumblrImageViewControllerDelegate method
 
-- (void)didFinishPickImageView:(UIImage *)image{
+- (void)tumblrImagePickerController:(TumblrImageViewController *)picker didFinishPickingImage:(UIImage *)image{
     // dismiss tumblr picker and set background image
-    [[TumblrImageViewController sharedInstance]dismissViewControllerAnimated:YES completion:^{
+    [picker dismissViewControllerAnimated:YES completion:^{
       [_delegate didFinishRequestPhoto:image];
     }];
     
@@ -93,7 +94,6 @@ didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info{
         
     }];
 }
-
 
 
 
