@@ -16,5 +16,9 @@
 
 @property (weak, nonatomic) IBOutlet GADBannerView *bannderView;
 
+
+
+@property (strong, nonatomic) PhotoRequester *photoRequester;
+
 @end
 

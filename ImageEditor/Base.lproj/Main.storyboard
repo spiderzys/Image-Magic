@@ -22,18 +22,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-C5-dRr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-C5-dRr">
+                                <rect key="frame" x="0.0" y="119.5" width="375" height="497.5"/>
                                 <color key="backgroundColor" red="0.21113496094456666" green="0.264911455057666" blue="0.27337801395939088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kab-ZW-8bM">
                                 <rect key="frame" x="156" y="65" width="55" height="55"/>
-                                <color key="backgroundColor" red="0.2111349609" green="0.26491145510000003" blue="0.273378014" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="F3S-P9-hEi"/>
                                     <constraint firstAttribute="width" constant="55" id="Lbk-uo-xaG"/>
                                 </constraints>
-                                <state key="normal" image="Tumblr"/>
+                                <state key="normal" image="Tumblr">
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="TumblrButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKA-rs-Ymd"/>
                                 </connections>
@@ -43,20 +44,6 @@
                                 <state key="normal" backgroundImage="camera"/>
                                 <connections>
                                     <action selector="cameraPhotoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C9a-hw-c3t"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xA9-xf-lO2">
-                                <rect key="frame" x="172.5" y="581" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="cXA-Al-RqI"/>
-                                    <constraint firstAttribute="height" constant="30" id="eTh-Xh-Whb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Go">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="GoButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdN-wr-j15"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu0-sh-jJg">
@@ -86,25 +73,39 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="adUnitID" value="ca-app-pub-3940256099942544/2934735716"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xA9-xf-lO2">
+                                <rect key="frame" x="298" y="31.5" width="40" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="cXA-Al-RqI"/>
+                                    <constraint firstAttribute="height" constant="30" id="eTh-Xh-Whb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="GoButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdN-wr-j15"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.2111349609" green="0.26491145510000003" blue="0.273378014" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xA9-xf-lO2" firstAttribute="centerY" secondItem="dxP-6W-zr8" secondAttribute="centerY" id="0nh-kR-eKa"/>
                             <constraint firstItem="khD-v2-vyt" firstAttribute="centerY" secondItem="cu0-sh-jJg" secondAttribute="centerY" id="1Rm-oz-S7J"/>
                             <constraint firstItem="dxP-6W-zr8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="5Db-Dj-mUR"/>
                             <constraint firstItem="7Xc-Ly-oyt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CE7-PL-pNz"/>
                             <constraint firstItem="khD-v2-vyt" firstAttribute="height" secondItem="cu0-sh-jJg" secondAttribute="height" id="CJ6-N8-jIP"/>
                             <constraint firstItem="cu0-sh-jJg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Cj6-60-dEe"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Eni-C5-dRr" secondAttribute="bottom" id="CrY-dU-Wa1"/>
                             <constraint firstItem="Eni-C5-dRr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dfg-uq-WQg"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="centerY" secondItem="cu0-sh-jJg" secondAttribute="centerY" id="Dom-7m-yzg"/>
-                            <constraint firstItem="7Xc-Ly-oyt" firstAttribute="top" secondItem="xA9-xf-lO2" secondAttribute="bottom" constant="6" id="MxJ-RV-WN4"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="height" secondItem="cu0-sh-jJg" secondAttribute="height" id="Q8t-h6-IEh"/>
                             <constraint firstItem="cu0-sh-jJg" firstAttribute="leading" secondItem="dxP-6W-zr8" secondAttribute="leading" id="S0u-fm-xNM"/>
                             <constraint firstAttribute="trailing" secondItem="Eni-C5-dRr" secondAttribute="trailing" id="XTO-8s-BMk"/>
                             <constraint firstItem="cu0-sh-jJg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Z1u-S6-Cok"/>
-                            <constraint firstItem="Eni-C5-dRr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dBc-Vp-w6n"/>
-                            <constraint firstItem="xA9-xf-lO2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="htO-46-YXB"/>
+                            <constraint firstItem="7Xc-Ly-oyt" firstAttribute="top" secondItem="Eni-C5-dRr" secondAttribute="bottom" id="aer-C8-Tnp"/>
+                            <constraint firstItem="Eni-C5-dRr" firstAttribute="top" secondItem="cu0-sh-jJg" secondAttribute="bottom" id="gtw-gA-hXk"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="width" secondItem="cu0-sh-jJg" secondAttribute="width" id="kIG-GS-d83"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xA9-xf-lO2" secondAttribute="trailing" constant="21" id="nQ1-2O-2Tl"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="top" secondItem="dxP-6W-zr8" secondAttribute="bottom" constant="8" id="ruy-VZ-OgI"/>
                             <constraint firstAttribute="trailing" secondItem="7Xc-Ly-oyt" secondAttribute="trailing" id="s6N-3E-KmO"/>
                             <constraint firstItem="khD-v2-vyt" firstAttribute="width" secondItem="cu0-sh-jJg" secondAttribute="width" id="tJ9-1A-Kpr"/>
@@ -131,6 +132,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Launch" width="969" height="1020"/>
         <image name="Tumblr" width="100" height="100"/>
         <image name="camera" width="512" height="512"/>
         <image name="photo" width="128" height="128"/>
