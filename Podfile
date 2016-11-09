@@ -6,7 +6,7 @@ platform :ios, ‘9.0’
 target 'ImageEditor' do
    pod 'Firebase/Core'
    pod 'Firebase/AdMob'
-   pod 'LMGPUImage'
+   pod 'GPUImage'
 end
 
 

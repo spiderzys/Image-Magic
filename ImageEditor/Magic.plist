@@ -91,6 +91,20 @@
 				<key>Max</key>
 				<integer>180</integer>
 			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>Vibrance</string>
+				<key>FilterClassName</key>
+				<string>GPUImageVibranceFilter</string>
+				<key>ArgumentName</key>
+				<string>vibrance</string>
+				<key>Default</key>
+				<integer>0</integer>
+				<key>Min</key>
+				<real>-1.2</real>
+				<key>Max</key>
+				<real>1.2</real>
+			</dict>
 		</array>
 	</dict>
 	<dict>
@@ -271,6 +285,12 @@
 				<key>Max</key>
 				<real>0.05</real>
 			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>CGAColorspace</string>
+				<key>FilterClassName</key>
+				<string>GPUImageCGAColorspaceFilter</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
@@ -278,34 +298,6 @@
 		<string>Pro</string>
 		<key>Sub</key>
 		<array>
-			<dict>
-				<key>FilterName</key>
-				<string>LowPass</string>
-				<key>FilterClassName</key>
-				<string>GPUImageLowPassFilter</string>
-				<key>ArgumentName</key>
-				<string>filterStrength</string>
-				<key>Default</key>
-				<integer>0</integer>
-				<key>Min</key>
-				<integer>0</integer>
-				<key>Max</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>FilterName</key>
-				<string>HighPass</string>
-				<key>FilterClassName</key>
-				<string>GPUImageHighPassFilter</string>
-				<key>ArgumentName</key>
-				<string>filterStrength</string>
-				<key>Default</key>
-				<integer>0</integer>
-				<key>Min</key>
-				<integer>0</integer>
-				<key>Max</key>
-				<integer>1</integer>
-			</dict>
 			<dict>
 				<key>FilterName</key>
 				<string>RGBErosion</string>

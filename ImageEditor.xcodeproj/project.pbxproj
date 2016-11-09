@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6951CB611DD2F68A00179EE7 /* GPUImageVibranceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6951CB601DD2F68A00179EE7 /* GPUImageVibranceFilter.m */; };
 		697824E81D6CC54D001437BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 697824E71D6CC54D001437BE /* main.m */; };
 		697824EB1D6CC54E001437BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 697824EA1D6CC54E001437BE /* AppDelegate.m */; };
 		697824EE1D6CC54E001437BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697824ED1D6CC54E001437BE /* ViewController.m */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6951CB5F1DD2F68A00179EE7 /* GPUImageVibranceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageVibranceFilter.h; sourceTree = "<group>"; };
+		6951CB601DD2F68A00179EE7 /* GPUImageVibranceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageVibranceFilter.m; sourceTree = "<group>"; };
 		697824E31D6CC54D001437BE /* ImageEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		697824E71D6CC54D001437BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		697824E91D6CC54E001437BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 				6978251E1D6D073E001437BE /* APICommunicator.m */,
 				699B00241DD15E2600E933AE /* ImageProcessorAnalyzer.h */,
 				699B00251DD15E2600E933AE /* ImageProcessorAnalyzer.m */,
+				6951CB5F1DD2F68A00179EE7 /* GPUImageVibranceFilter.h */,
+				6951CB601DD2F68A00179EE7 /* GPUImageVibranceFilter.m */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				697824EB1D6CC54E001437BE /* AppDelegate.m in Sources */,
 				697824E81D6CC54D001437BE /* main.m in Sources */,
 				6978251F1D6D073E001437BE /* APICommunicator.m in Sources */,
+				6951CB611DD2F68A00179EE7 /* GPUImageVibranceFilter.m in Sources */,
 				69D0019B1DCA693A0085FF51 /* TumblrImageViewController.m in Sources */,
 				699B00261DD15E2600E933AE /* ImageProcessorAnalyzer.m in Sources */,
 				69D001A01DCA7AD40085FF51 /* TumblrImageCollectionViewCell.m in Sources */,

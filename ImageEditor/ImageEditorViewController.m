@@ -196,6 +196,19 @@ numberOfRowsInComponent:(NSInteger)component{
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
+    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"first"]){
+        
+        [[NSUserDefaults standardUserDefaults]setObject:@(true) forKey:@"first"];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"By selecting the same processor again, you can revert this image process" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            [alert dismissViewControllerAnimated:YES completion:nil];
+        }];
+        [alert addAction:action];
+        [self presentViewController:alert animated:YES completion:^{
+       
+        }];
+    }
+    
   
     if ((selectedCellIndexPath != nil) & (selectedCellIndexPath.row == indexPath.row) & (selectedCellIndexPath.section == [self pickerViewSelectedProcessorCategory])){
         // select the same processor, then revert its effect
