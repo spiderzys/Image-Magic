@@ -20,7 +20,7 @@
     [_bannderView setRootViewController:self];
     GADRequest *request = [GADRequest request];
     [_bannderView loadRequest:request];
-    request.testDevices = @[ kGADSimulatorID ];
+    
     
     
     

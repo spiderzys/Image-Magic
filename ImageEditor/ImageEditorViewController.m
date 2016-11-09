@@ -111,7 +111,7 @@
 - (IBAction)doneButtonTouched:(id)sender {
     
     // back to the root view controller
-    originalImage = _processedImageView.image;
+    
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];
