@@ -12,9 +12,13 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *processedImageView;
 
+@property (weak, nonatomic) IBOutlet UILabel *sliderLabel;
+
 @property (weak, nonatomic) IBOutlet UIPickerView *processorCategoryPickerView;
 
 @property (weak, nonatomic) IBOutlet UICollectionView *subProcessorCollectionView;
+
+@property (weak, nonatomic) IBOutlet UISlider *processorArgumentSlider;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil rawImage:(UIImage*)rawImage;
 

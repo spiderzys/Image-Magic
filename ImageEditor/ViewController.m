@@ -22,6 +22,8 @@
     [_bannderView loadRequest:request];
     request.testDevices = @[ kGADSimulatorID ];
     
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

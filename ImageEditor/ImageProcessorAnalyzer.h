@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface ImageProcessorAnalyzer : NSObject
 
 
@@ -26,5 +26,6 @@
 
 - (NSDictionary*)getProcessorOfIndex:(NSInteger)index inCategory:(NSInteger)category;
 
+- (UIImage*)processImage:(UIImage*)image WithArgument:(float)argument ProcessorCategory:(NSInteger)category index:(NSInteger)index;
 
 @end

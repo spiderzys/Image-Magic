@@ -11,15 +11,14 @@
 #import "TumblrImageViewController.h"
 #import "TumblrImageCollectionViewCell.h"
 
-#define NUM_COLUMN 4
+#define NUM_COLUMN 4 // the num of images per row
 
 
 
 @interface TumblrImageViewController (){
-    NSMutableArray *imageUrlArray;
-    NSCache *imageCache;
+    NSMutableArray *imageUrlArray;  // store the url of image
+    NSCache *imageCache;  // cache the tumblr blog image
     APICommunicator *apiCommunicator;
-//    int numOfLoadedPages;
     NSString *blogName;
     NSString *reuseIdentifier;
 }
@@ -37,7 +36,6 @@
     apiCommunicator.delegate = self;
     reuseIdentifier = @"tumblr";
     [_imageCollectionView registerNib:[UINib nibWithNibName:@"TumblrImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
-  //  numOfLoadedPages = 0;
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -84,7 +82,7 @@
 - (void)loadImagesFromBlog:(NSString*)blog{
     [imageUrlArray removeAllObjects];
     [imageCache removeAllObjects];
- //   numOfLoadedPages = 1;
+
     [self searchBlog:blog InPage:1];
 }
 
@@ -150,10 +148,11 @@
     NSData* imageData = [imageCache objectForKey:imageCacheKey];
     
     if (imageData) {
-        
+        // try to load image from cache
         imageCell.tumblrImageView.image = [UIImage imageWithData:imageData];
     }
     else {
+        // load image from Url
         NSURL *imageUrl = imageUrlArray[indexPath.row];
         [[[NSURLSession sharedSession]dataTaskWithURL:imageUrl completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             TumblrImageCollectionViewCell *updateCell = (TumblrImageCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
@@ -191,6 +190,7 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    // 4 images per row
     CGFloat cellWidth = collectionView.bounds.size.width/NUM_COLUMN;
     return CGSizeMake(cellWidth, cellWidth);
 }
@@ -198,9 +198,7 @@
 #pragma scrollview delegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
-    NSLog(@"%f",scrollView.contentOffset.y);
-    
-    
+    // refresh the tumblr blog images
     if(scrollView.contentOffset.y < -100){
         _imageCollectionView.scrollEnabled = NO;
         [self loadImagesFromBlog:blogName];

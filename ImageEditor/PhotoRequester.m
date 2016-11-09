@@ -24,7 +24,6 @@
     if (_delegate != nil){
         switch (source) {  // request photo from specified source
             case photoLibrary:
-                
                 [self requestLocalPhotoViaSourceTyple:UIImagePickerControllerSourceTypePhotoLibrary];
                 break;
             case camera:

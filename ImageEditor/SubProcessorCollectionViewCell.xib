@@ -9,48 +9,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubProcessorCollectionViewCell">
-            <connections>
-                <outlet property="baseView" destination="J0G-Oc-eyW" id="OOV-Wx-5nX"/>
-                <outlet property="subProcessorLabel" destination="tMZ-R8-Gna" id="hDL-xQ-nrd"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubProcessorCollectionViewCell"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sub" id="gTV-IL-0wX" customClass="subProcessorCollectionViewCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sub" id="gTV-IL-0wX" customClass="SubProcessorCollectionViewCell">
             <rect key="frame" x="0.0" y="0.0" width="139" height="106"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="139" height="106"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0G-Oc-eyW">
-                        <rect key="frame" x="0.0" y="0.0" width="139" height="106"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-R8-Gna">
-                                <rect key="frame" x="6" y="6" width="127" height="94"/>
-                                <color key="backgroundColor" red="0.2111349609" green="0.26491145510000003" blue="0.273378014" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-R8-Gna">
+                        <rect key="frame" x="2" y="2" width="135" height="102"/>
                         <color key="backgroundColor" red="0.2111349609" green="0.26491145510000003" blue="0.273378014" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="tMZ-R8-Gna" firstAttribute="leading" secondItem="J0G-Oc-eyW" secondAttribute="leading" constant="6" id="DV2-wl-KI6"/>
-                            <constraint firstItem="tMZ-R8-Gna" firstAttribute="top" secondItem="J0G-Oc-eyW" secondAttribute="top" constant="6" id="JBf-1F-bht"/>
-                            <constraint firstAttribute="trailing" secondItem="tMZ-R8-Gna" secondAttribute="trailing" constant="6" id="eJ9-Lt-dIu"/>
-                            <constraint firstAttribute="bottom" secondItem="tMZ-R8-Gna" secondAttribute="bottom" constant="6" id="qjc-cr-DDh"/>
-                        </constraints>
-                    </view>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="J0G-Oc-eyW" secondAttribute="trailing" id="Ark-ay-52t"/>
-                <constraint firstItem="J0G-Oc-eyW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Dte-7b-pYI"/>
-                <constraint firstAttribute="bottom" secondItem="J0G-Oc-eyW" secondAttribute="bottom" id="eMX-np-q7g"/>
-                <constraint firstItem="J0G-Oc-eyW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lbC-gt-8W8"/>
+                <constraint firstItem="tMZ-R8-Gna" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="Kr6-vt-Gvg"/>
+                <constraint firstAttribute="trailing" secondItem="tMZ-R8-Gna" secondAttribute="trailing" constant="2" id="MFo-24-RCE"/>
+                <constraint firstItem="tMZ-R8-Gna" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="l5h-dW-eQS"/>
+                <constraint firstAttribute="bottom" secondItem="tMZ-R8-Gna" secondAttribute="bottom" constant="2" id="rZn-P6-eOy"/>
             </constraints>
             <size key="customSize" width="139" height="106"/>
+            <connections>
+                <outlet property="subProcessorLabel" destination="tMZ-R8-Gna" id="i4p-F4-Pjl"/>
+            </connections>
             <point key="canvasLocation" x="-37.5" y="-18"/>
         </collectionViewCell>
     </objects>

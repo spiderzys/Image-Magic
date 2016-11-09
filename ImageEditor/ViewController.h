@@ -18,7 +18,5 @@
 
 
 
-@property (strong, nonatomic) PhotoRequester *photoRequester;
-
 @end
 

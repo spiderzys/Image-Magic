@@ -7,6 +7,7 @@
 //
 
 #import "ImageProcessorAnalyzer.h"
+#import "GPUImage.h"
 
 @interface ImageProcessorAnalyzer (){
     
@@ -32,7 +33,7 @@
 
 - (NSString*)getNameOfProcessorCategoryOfIndex:(NSInteger)category{
     NSDictionary *processorsDictionary = [self getCategoryOfIndex:category];
-    return [processorsDictionary objectForKey:@"Name"];
+    return [processorsDictionary objectForKey:@"CategoryName"];
 }
 
 - (NSArray*)getProcessorsInCategory:(NSInteger)category {
@@ -42,13 +43,30 @@
 
 - (NSInteger)getNumOfProcessorsInCategory:(NSInteger)category{
     NSArray *processors = [self getProcessorsInCategory:category];
+    
     return processors.count;
 }
-                                                        
+
 - (NSDictionary*)getProcessorOfIndex:(NSInteger)index inCategory:(NSInteger)category{
     NSArray *processors = [self getProcessorsInCategory:category];
     return processors[index];
 }
+
+- (UIImage*)processImage:(UIImage*)image WithArgument:(float)argument ProcessorCategory:(NSInteger)category index:(NSInteger)index{
+    
+    NSDictionary *processor = [self getProcessorOfIndex:index inCategory:category];
+    NSString *filterName = [processor objectForKey:@"FilterClassName"];
+    
+    GPUImageFilter *filter = [[NSClassFromString(filterName) alloc]init];
+    NSString *argumentName = [processor objectForKey:@"ArgumentName"];
+    if(argumentName != nil){
+       [filter setValue:@(argument) forKey:argumentName];
+    }
+    
+    return [filter imageByFilteringImage:image];
+}
+
+
 
 
 

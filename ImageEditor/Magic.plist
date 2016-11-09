@@ -3,43 +3,17 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>Name</key>
-		<string>Color adjustment</string>
+		<key>CategoryName</key>
+		<string>Color</string>
 		<key>Sub</key>
 		<array>
 			<dict>
-				<key>SubName</key>
-				<string>Brightness</string>
-				<key>Default</key>
-				<integer>0</integer>
-				<key>Min</key>
-				<integer>-1</integer>
-				<key>Max</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>SubName</key>
-				<string>Brightness</string>
-				<key>Default</key>
-				<integer>0</integer>
-				<key>Min</key>
-				<integer>-1</integer>
-				<key>Max</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>SubName</key>
-				<string>Exposure</string>
-				<key>Default</key>
-				<integer>0</integer>
-				<key>Min</key>
-				<integer>-10</integer>
-				<key>Max</key>
-				<integer>10</integer>
-			</dict>
-			<dict>
-				<key>SubName</key>
+				<key>FilterName</key>
 				<string>Contrast</string>
+				<key>FilterClassName</key>
+				<string>GPUImageContrastFilter</string>
+				<key>ArgumentName</key>
+				<string>contrast</string>
 				<key>Default</key>
 				<integer>1</integer>
 				<key>Min</key>
@@ -48,8 +22,12 @@
 				<integer>4</integer>
 			</dict>
 			<dict>
-				<key>SubName</key>
+				<key>FilterName</key>
 				<string>Saturation</string>
+				<key>FilterClassName</key>
+				<string>GPUImageSaturationFilter</string>
+				<key>ArgumentName</key>
+				<string>saturation</string>
 				<key>Default</key>
 				<integer>1</integer>
 				<key>Min</key>
@@ -58,8 +36,103 @@
 				<integer>2</integer>
 			</dict>
 			<dict>
-				<key>SubName</key>
+				<key>FilterName</key>
+				<string>R-multiplier</string>
+				<key>FilterClassName</key>
+				<string>GPUImageRGBFilter</string>
+				<key>ArgumentName</key>
+				<string>red</string>
+				<key>Default</key>
+				<integer>1</integer>
+				<key>Min</key>
+				<integer>0</integer>
+				<key>Max</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>G-multiplier</string>
+				<key>FilterClassName</key>
+				<string>GPUImageRGBFilter</string>
+				<key>ArgumentName</key>
+				<string>blue</string>
+				<key>Default</key>
+				<integer>1</integer>
+				<key>Min</key>
+				<integer>0</integer>
+				<key>Max</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>B-multiplier</string>
+				<key>FilterClassName</key>
+				<string>GPUImageRGBFilter</string>
+				<key>ArgumentName</key>
+				<string>green</string>
+				<key>Default</key>
+				<integer>1</integer>
+				<key>Min</key>
+				<integer>0</integer>
+				<key>Max</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>Hue</string>
+				<key>FilterClassName</key>
+				<string>GPUImageHueFilter</string>
+				<key>ArgumentName</key>
+				<string>hue</string>
+				<key>Default</key>
+				<integer>0</integer>
+				<key>Min</key>
+				<integer>-180</integer>
+				<key>Max</key>
+				<integer>180</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>CategoryName</key>
+		<string>Light</string>
+		<key>Sub</key>
+		<array>
+			<dict>
+				<key>FilterName</key>
+				<string>Brightness</string>
+				<key>FilterClassName</key>
+				<string>GPUImageBrightnessFilter</string>
+				<key>ArgumentName</key>
+				<string>brightness</string>
+				<key>Default</key>
+				<integer>0</integer>
+				<key>Min</key>
+				<integer>-1</integer>
+				<key>Max</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>Exposure</string>
+				<key>FilterClassName</key>
+				<string>GPUImageExposureFilter</string>
+				<key>ArgumentName</key>
+				<string>exposure</string>
+				<key>Default</key>
+				<integer>0</integer>
+				<key>Min</key>
+				<integer>-10</integer>
+				<key>Max</key>
+				<integer>10</integer>
+			</dict>
+			<dict>
+				<key>FilterName</key>
 				<string>Gamma</string>
+				<key>FilterClassName</key>
+				<string>GPUImageGammaFilter</string>
+				<key>ArgumentName</key>
+				<string>gamma</string>
 				<key>Default</key>
 				<integer>1</integer>
 				<key>Min</key>
@@ -68,18 +141,12 @@
 				<integer>3</integer>
 			</dict>
 			<dict>
-				<key>SubName</key>
-				<string>Vibrance</string>
-				<key>Default</key>
-				<integer>0</integer>
-				<key>Min</key>
-				<real>-1.2</real>
-				<key>Max</key>
-				<real>1.2</real>
-			</dict>
-			<dict>
-				<key>SubName</key>
-				<string>R-multiplier</string>
+				<key>FilterName</key>
+				<string>Opacity</string>
+				<key>FilterClassName</key>
+				<string>GPUImageOpacityFilter</string>
+				<key>ArgumentName</key>
+				<string>opacity</string>
 				<key>Default</key>
 				<integer>1</integer>
 				<key>Min</key>
@@ -88,8 +155,26 @@
 				<integer>1</integer>
 			</dict>
 			<dict>
-				<key>SubName</key>
-				<string>G-multiplier</string>
+				<key>FilterName</key>
+				<string>Shadow</string>
+				<key>FilterClassName</key>
+				<string>GPUImageHighlightShadowFilter</string>
+				<key>ArgumentName</key>
+				<string>shadows</string>
+				<key>Default</key>
+				<integer>0</integer>
+				<key>Min</key>
+				<integer>0</integer>
+				<key>Max</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>Highlight</string>
+				<key>FilterClassName</key>
+				<string>GPUImageHighlightShadowFilter</string>
+				<key>ArgumentName</key>
+				<string>highlights</string>
 				<key>Default</key>
 				<integer>1</integer>
 				<key>Min</key>
@@ -97,25 +182,155 @@
 				<key>Max</key>
 				<integer>1</integer>
 			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>CategoryName</key>
+		<string>Effect</string>
+		<key>Sub</key>
+		<array>
 			<dict>
-				<key>SubName</key>
-				<string>B-multiplier</string>
+				<key>FilterName</key>
+				<string>Grayscale</string>
+				<key>FilterClassName</key>
+				<string>GPUImageGrayscaleFilter</string>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>SepiaTone</string>
+				<key>FilterClassName</key>
+				<string>GPUImageSepiaFilter</string>
+				<key>ArgumentName</key>
+				<string>intensity</string>
 				<key>Default</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>Min</key>
 				<integer>0</integer>
 				<key>Max</key>
 				<integer>1</integer>
 			</dict>
 			<dict>
-				<key>SubName</key>
-				<string>Saturation</string>
+				<key>FilterName</key>
+				<string>Color Invert</string>
+				<key>FilterClassName</key>
+				<string>GPUImageColorInvertFilter</string>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>Sharpen</string>
+				<key>FilterClassName</key>
+				<string>GPUImageSharpenFilter</string>
+				<key>ArgumentName</key>
+				<string>sharpness</string>
 				<key>Default</key>
-				<integer>1</integer>
+				<integer>0</integer>
+				<key>Min</key>
+				<integer>-4</integer>
+				<key>Max</key>
+				<integer>4</integer>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>Emboss</string>
+				<key>FilterClassName</key>
+				<string>GPUImageEmbossFilter</string>
+				<key>ArgumentName</key>
+				<string>intensity</string>
+				<key>Default</key>
+				<integer>0</integer>
 				<key>Min</key>
 				<integer>0</integer>
 				<key>Max</key>
 				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>Halftone</string>
+				<key>FilterClassName</key>
+				<string>GPUImageHalftoneFilter</string>
+				<key>ArgumentName</key>
+				<string>fractionalWidthOfAPixel</string>
+				<key>Default</key>
+				<integer>0</integer>
+				<key>Min</key>
+				<integer>0</integer>
+				<key>Max</key>
+				<real>0.05</real>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>Pixellate</string>
+				<key>FilterClassName</key>
+				<string>GPUImagePixellateFilter</string>
+				<key>ArgumentName</key>
+				<string>fractionalWidthOfAPixel</string>
+				<key>Default</key>
+				<integer>0</integer>
+				<key>Min</key>
+				<integer>0</integer>
+				<key>Max</key>
+				<real>0.05</real>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>CategoryName</key>
+		<string>Pro</string>
+		<key>Sub</key>
+		<array>
+			<dict>
+				<key>FilterName</key>
+				<string>LowPass</string>
+				<key>FilterClassName</key>
+				<string>GPUImageLowPassFilter</string>
+				<key>ArgumentName</key>
+				<string>filterStrength</string>
+				<key>Default</key>
+				<integer>0</integer>
+				<key>Min</key>
+				<integer>0</integer>
+				<key>Max</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>HighPass</string>
+				<key>FilterClassName</key>
+				<string>GPUImageHighPassFilter</string>
+				<key>ArgumentName</key>
+				<string>filterStrength</string>
+				<key>Default</key>
+				<integer>0</integer>
+				<key>Min</key>
+				<integer>0</integer>
+				<key>Max</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>RGBErosion</string>
+				<key>FilterClassName</key>
+				<string>GPUImageRGBErosionFilter</string>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>RGBClosing</string>
+				<key>FilterClassName</key>
+				<string>GPUImageRGBClosingFilter</string>
+			</dict>
+			<dict>
+				<key>FilterName</key>
+				<string>LuminanceThreshold</string>
+				<key>FilterClassName</key>
+				<string>GPUImageLuminanceThresholdFilter</string>
+				<key>ArgumentName</key>
+				<string>threshold</string>
+				<key>Default</key>
+				<real>0.5</real>
+				<key>Min</key>
+				<integer>0</integer>
+				<key>Max</key>
+				<integer>1</integer>
 			</dict>
 		</array>
 	</dict>
