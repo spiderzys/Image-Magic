@@ -90,7 +90,7 @@
 
 #pragma SearchBar delegate method
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    
+    // search the blog with name
     blogName = [searchBar text];
     [searchBar resignFirstResponder];
     searchBar.userInteractionEnabled = NO;
@@ -117,7 +117,19 @@
 - (void)didGetPhotoUrls:(NSMutableArray *)photoUrlArray{
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        if(imageUrlArray.count == 0){
+        if(photoUrlArray.count == 0){
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"No return. Please check your input and network" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                [alert dismissViewControllerAnimated:YES completion:nil];
+            }];
+            [alert addAction:action];
+            [self presentViewController:alert animated:YES completion:^{
+                
+            }];
+
+        }
+        
+        else if(imageUrlArray.count == 0){
             
             imageUrlArray = [NSMutableArray arrayWithArray:photoUrlArray];
             [_imageCollectionView reloadData];

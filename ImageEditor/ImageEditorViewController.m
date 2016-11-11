@@ -18,6 +18,7 @@
     UIDocumentInteractionController *documentInteractionController;
     NSString* reuseIdentifier;
     NSIndexPath *selectedCellIndexPath;
+    NSString *deviceType;
 }
 
 @end
@@ -40,6 +41,7 @@
     [super viewDidLoad];
     
     // prepare for this view controller
+    deviceType = [UIDevice currentDevice].model;  // determine device type
     reuseIdentifier = @"sub";
     [_subProcessorCollectionView registerNib:[UINib nibWithNibName:@"SubProcessorCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     documentInteractionController.delegate = self;
@@ -139,7 +141,15 @@ numberOfRowsInComponent:(NSInteger)component{
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(nullable UIView *)view{
     UILabel *label = [[UILabel alloc]init];
     if (label){
-        [label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:16]];
+        
+        if([deviceType isEqualToString:@"iPhone"]){
+             [label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:16]];
+        }
+        else{
+             [label setFont:[UIFont fontWithName:@"Helvetica-Bold" size:20]];
+        }
+       
+        
         label.textAlignment = NSTextAlignmentCenter;
         label.text = [[ImageProcessorAnalyzer sharedInstance]getNameOfProcessorCategoryOfIndex:row];
         label.textColor = [UIColor whiteColor];
@@ -191,6 +201,19 @@ numberOfRowsInComponent:(NSInteger)component{
     
     return cell;
 }
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    if([deviceType isEqualToString:@"iPhone"]){
+        return CGSizeMake(66, 50);
+    }
+    else{
+        return CGSizeMake(93, 68);
+    }
+    
+}
+
 
 
 
