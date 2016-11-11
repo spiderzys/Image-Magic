@@ -21,8 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" placeholder="Input Blog Name" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NiP-1I-gDw">
-                    <rect key="frame" x="20" y="16" width="335" height="44"/>
+                <searchBar contentMode="redraw" placeholder="Input Tumblr Blog Name" translatesAutoresizingMaskIntoConstraints="NO" id="NiP-1I-gDw">
+                    <rect key="frame" x="20" y="16" width="269" height="44"/>
                     <textInputTraits key="textInputTraits"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="LEb-tE-jaT"/>
@@ -42,16 +42,32 @@
                         <outlet property="delegate" destination="-1" id="PcO-E1-bve"/>
                     </connections>
                 </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcP-vv-icn">
+                    <rect key="frame" x="299" y="16" width="66" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="xRv-oO-3gc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelBardidTouched:" destination="-1" eventType="touchUpInside" id="J0Q-N6-HFJ"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.2111349609" green="0.26491145510000003" blue="0.273378014" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="NiP-1I-gDw" secondAttribute="trailing" constant="20" id="Oxy-0Q-wVo"/>
+                <constraint firstAttribute="trailing" secondItem="NcP-vv-icn" secondAttribute="trailing" constant="10" id="Fys-l3-PTi"/>
+                <constraint firstItem="NcP-vv-icn" firstAttribute="centerY" secondItem="NiP-1I-gDw" secondAttribute="centerY" id="Pck-Os-2up"/>
                 <constraint firstItem="NiP-1I-gDw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="QEw-C2-6i3"/>
                 <constraint firstItem="w1n-3Q-0lc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Sxu-Z9-hh0"/>
                 <constraint firstItem="w1n-3Q-0lc" firstAttribute="top" secondItem="NiP-1I-gDw" secondAttribute="bottom" constant="6" id="WYt-fq-0BR"/>
                 <constraint firstAttribute="trailing" secondItem="w1n-3Q-0lc" secondAttribute="trailing" id="d8T-Aa-2rm"/>
                 <constraint firstAttribute="bottom" secondItem="w1n-3Q-0lc" secondAttribute="bottom" id="jMl-Gp-UOp"/>
+                <constraint firstItem="NcP-vv-icn" firstAttribute="height" secondItem="NiP-1I-gDw" secondAttribute="height" id="kdc-pS-eZK"/>
                 <constraint firstItem="NiP-1I-gDw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="mZK-eH-pxr"/>
+                <constraint firstItem="NcP-vv-icn" firstAttribute="leading" secondItem="NiP-1I-gDw" secondAttribute="trailing" constant="10" id="qFZ-yr-RRM"/>
             </constraints>
             <point key="canvasLocation" x="26.5" y="51.5"/>
         </view>
