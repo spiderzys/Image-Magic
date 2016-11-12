@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "APICommunicator.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
+
 
 @protocol TumblrImageViewControllerDelegate <NSObject>  // the delegate should know what to do after request
 - (void)tumblrImagePickerController:(__kindof UIViewController *)picker didFinishPickingImage:(UIImage *)image;
@@ -15,6 +17,7 @@
 
 @interface TumblrImageViewController : UIViewController <APICommunicatorDelegate, UIScrollViewDelegate>
 
+//@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 @property (weak, nonatomic) IBOutlet UICollectionView *imageCollectionView;
 @property (weak, nonatomic) IBOutlet UISearchBar *blogSearchBar;
 @property (weak, nonatomic) id<TumblrImageViewControllerDelegate> delegate;

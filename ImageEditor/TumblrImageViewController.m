@@ -35,7 +35,13 @@
     apiCommunicator = [APICommunicator new];
     apiCommunicator.delegate = self;
     reuseIdentifier = @"tumblr";
+  /*
+    [_bannerView setRootViewController:self];
+    GADRequest *request = [GADRequest request];
+    [_bannerView loadRequest:request];
+  */  
     [_imageCollectionView registerNib:[UINib nibWithNibName:@"TumblrImageCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
+    
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -114,31 +120,24 @@
 
 #pragma APICommunicatorDelegate
 
+
+- (void)didRequestFailedDueToErrorMessage:(NSString*)errorMessage{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat: @"Error message: %@ \n Please check your input and network",errorMessage] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [alert dismissViewControllerAnimated:YES completion:nil];
+    }];
+    [alert addAction:action];
+    [self presentViewController:alert animated:YES completion:^{
+        
+    }];
+}
+
 - (void)didGetPhotoUrls:(NSMutableArray *)photoUrlArray{
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        if(photoUrlArray.count == 0){
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"No return. Please check your input and network" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *action = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-                [alert dismissViewControllerAnimated:YES completion:nil];
-            }];
-            [alert addAction:action];
-            [self presentViewController:alert animated:YES completion:^{
-                
-            }];
+        imageUrlArray = [NSMutableArray arrayWithArray:photoUrlArray];
+        [_imageCollectionView reloadData];
 
-        }
-        
-        else if(imageUrlArray.count == 0){
-            
-            imageUrlArray = [NSMutableArray arrayWithArray:photoUrlArray];
-            [_imageCollectionView reloadData];
-        }
-        else {
-            
-            [imageUrlArray addObjectsFromArray:photoUrlArray];
-            
-        }
         _blogSearchBar.userInteractionEnabled = YES;
         _imageCollectionView.scrollEnabled = YES;
     });

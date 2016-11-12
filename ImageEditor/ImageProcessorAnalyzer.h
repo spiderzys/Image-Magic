@@ -17,7 +17,6 @@
 
 - (NSDictionary*)getCategoryOfIndex:(NSInteger)category;
 
-
 - (NSString*)getNameOfProcessorCategoryOfIndex:(NSInteger)category;
 
 - (NSArray*)getProcessorsInCategory:(NSInteger)category;
