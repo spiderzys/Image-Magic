@@ -21,9 +21,7 @@
     GADRequest *request = [GADRequest request];
     [_bannderView loadRequest:request];
     
-    
-    
-    
+  
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -41,20 +39,24 @@
 - (IBAction)photoLibraryButtonClicked:(UIButton *)sender {
     
     [[PhotoRequester sharedInstance] requestPhotoViaSource:photoLibrary];
+    [_loadingActivityIndicatorView startAnimating];
 }
 - (IBAction)cameraPhotoClicked:(UIButton *)sender {
     
     [[PhotoRequester sharedInstance] requestPhotoViaSource:camera];
+    [_loadingActivityIndicatorView startAnimating];
 }
 - (IBAction)TumblrButtonClicked:(UIButton *)sender {
     
     [[PhotoRequester sharedInstance] requestPhotoViaSource:tumblr];
+    [_loadingActivityIndicatorView startAnimating];
 }
 
 - (void)didFinishRequestPhoto:(UIImage*)photo{
-    
+   
     _backgroundImageView.image = photo;
-    
+  
+    [_loadingActivityIndicatorView stopAnimating];
 }
 
 - (IBAction)GoButtonTouched:(UIButton *)sender {
@@ -63,7 +65,7 @@
     }
     
     else {
-        [self showNoImageAlert];
+    //    [self showNoImageAlert];
     }
     
 }
@@ -74,15 +76,7 @@
     [self presentViewController:imageEditor animated:YES completion:nil];
 }
 
-- (void)showNoImageAlert{
-    
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"No image picked" preferredStyle:UIAlertControllerStyleActionSheet];
-    [self presentViewController:alert animated:YES completion:^{
-        [NSTimer scheduledTimerWithTimeInterval:0.6 repeats:NO block:^(NSTimer * _Nonnull timer) {
-            [alert dismissViewControllerAnimated:YES completion:nil];
-        }];
-    }];
-}
+
 
 
 @end

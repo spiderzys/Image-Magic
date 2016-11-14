@@ -23,7 +23,7 @@
     [[[NSURLSession sharedSession]dataTaskWithURL:[NSURL URLWithString:blogRequestString] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         if(error){
-            [_delegate didRequestFailedDueToErrorMessage:error.description];
+            [_delegate didRequestFailedDueToErrorMessage:@"connection error"];
         }
         else{
             [self parseTumblrData:data];
@@ -37,7 +37,6 @@
     NSError *parserError;
     NSMutableArray *photoUrlArray = [NSMutableArray new];
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:&parserError];
-    NSLog(@"%@",dic);
     if(!data){
         NSLog(@"no data");
     }

@@ -40,14 +40,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khD-v2-vyt">
-                                <rect key="frame" x="91" y="64.5" width="55" height="55"/>
+                                <rect key="frame" x="91" y="65" width="55" height="55"/>
                                 <state key="normal" backgroundImage="camera"/>
                                 <connections>
                                     <action selector="cameraPhotoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C9a-hw-c3t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu0-sh-jJg">
-                                <rect key="frame" x="26" y="64.5" width="55" height="55"/>
+                                <rect key="frame" x="26" y="65" width="55" height="55"/>
                                 <state key="normal" backgroundImage="photo"/>
                                 <connections>
                                     <action selector="photoLibraryButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xwy-6o-oGv"/>
@@ -69,7 +69,7 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Xc-Ly-oyt" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="125.5" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="126" width="320" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="900" constant="50" id="OAn-jB-miO">
@@ -98,9 +98,13 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-C5-dRr">
-                                <rect key="frame" x="0.0" y="175.5" width="320" height="392.5"/>
+                                <rect key="frame" x="0.0" y="176" width="320" height="392"/>
                                 <color key="backgroundColor" red="0.21113496094456666" green="0.264911455057666" blue="0.27337801395939088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ncy-lh-Iks">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.2111349609" green="0.26491145510000003" blue="0.273378014" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -112,37 +116,32 @@
                             <constraint firstItem="cu0-sh-jJg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Cj6-60-dEe"/>
                             <constraint firstItem="Eni-C5-dRr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dfg-uq-WQg"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="centerY" secondItem="cu0-sh-jJg" secondAttribute="centerY" id="Dom-7m-yzg"/>
+                            <constraint firstItem="Ncy-lh-Iks" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J5c-wn-EdO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Eni-C5-dRr" secondAttribute="bottom" id="NRZ-9Z-81a"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="height" secondItem="cu0-sh-jJg" secondAttribute="height" id="Q8t-h6-IEh"/>
                             <constraint firstItem="cu0-sh-jJg" firstAttribute="leading" secondItem="dxP-6W-zr8" secondAttribute="leading" id="S0u-fm-xNM"/>
                             <constraint firstItem="7Xc-Ly-oyt" firstAttribute="top" secondItem="khD-v2-vyt" secondAttribute="bottom" constant="6" id="Sfi-p9-qLi"/>
                             <constraint firstAttribute="trailing" secondItem="Eni-C5-dRr" secondAttribute="trailing" id="XTO-8s-BMk"/>
-                            <constraint firstItem="cu0-sh-jJg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Z1u-S6-Cok"/>
+                            <constraint firstItem="Ncy-lh-Iks" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aDg-z7-7ef"/>
                             <constraint firstItem="xA9-xf-lO2" firstAttribute="centerY" secondItem="cu0-sh-jJg" secondAttribute="centerY" id="cMe-nj-9Is"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="width" secondItem="cu0-sh-jJg" secondAttribute="width" id="kIG-GS-d83"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xA9-xf-lO2" secondAttribute="trailing" constant="21" id="nQ1-2O-2Tl"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="top" secondItem="dxP-6W-zr8" secondAttribute="bottom" constant="8" id="ruy-VZ-OgI"/>
                             <constraint firstAttribute="trailing" secondItem="7Xc-Ly-oyt" secondAttribute="trailing" id="s6N-3E-KmO"/>
                             <constraint firstItem="khD-v2-vyt" firstAttribute="width" secondItem="cu0-sh-jJg" secondAttribute="width" id="tJ9-1A-Kpr"/>
-                            <constraint firstItem="Kab-ZW-8bM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="vLC-cO-6oC"/>
                             <constraint firstItem="khD-v2-vyt" firstAttribute="leading" secondItem="cu0-sh-jJg" secondAttribute="trailing" constant="10" id="wX8-Ox-AhM"/>
                             <constraint firstItem="Kab-ZW-8bM" firstAttribute="leading" secondItem="khD-v2-vyt" secondAttribute="trailing" constant="10" id="xfR-rS-zph"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Z1u-S6-Cok"/>
-                                <exclude reference="vLC-cO-6oC"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="Eni-C5-dRr" id="QD2-2a-PNb"/>
                         <outlet property="bannderView" destination="7Xc-Ly-oyt" id="n64-dJ-PzE"/>
+                        <outlet property="loadingActivityIndicatorView" destination="Ncy-lh-Iks" id="gVx-av-xXW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336.80000000000001" y="291.90404797601201"/>
+            <point key="canvasLocation" x="335.625" y="291.54929577464787"/>
         </scene>
     </scenes>
     <resources>

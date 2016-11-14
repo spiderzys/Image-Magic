@@ -20,6 +20,8 @@
 
 @property (weak, nonatomic) IBOutlet UISlider *processorArgumentSlider;
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingImageActivityView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil rawImage:(UIImage*)rawImage;
 
 @end

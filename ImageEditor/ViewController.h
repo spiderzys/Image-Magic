@@ -16,7 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet GADBannerView *bannderView;
 
-
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingActivityIndicatorView;
 
 @end
 

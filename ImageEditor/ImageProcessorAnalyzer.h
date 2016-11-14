@@ -27,4 +27,7 @@
 
 - (UIImage*)processImage:(UIImage*)image WithArgument:(float)argument ProcessorCategory:(NSInteger)category index:(NSInteger)index;
 
+- (UIImage*)resizeImage:(UIImage*)image toSize:(CGSize)size;
+
+
 @end

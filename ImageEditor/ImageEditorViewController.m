@@ -10,15 +10,20 @@
 #import "SubProcessorCollectionViewCell.h"
 #import "ImageProcessorAnalyzer.h"
 
+#define MAX_RESOLUTION 5000000
+
 @interface ImageEditorViewController (){
     
     UIImage *originalImage;
     UIImage *processedImage;
     UIImage *previousImage;
+    UIImage *resizedOriginalImage;
     UIDocumentInteractionController *documentInteractionController;
     NSString* reuseIdentifier;
     NSIndexPath *selectedCellIndexPath;
     NSString *deviceType;
+    float sizeFactor;
+    
 }
 
 @end
@@ -31,7 +36,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil rawImage:(UIImage*)rawImage{
     
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]){
-
+       
         originalImage = rawImage;
     }
     return self;
@@ -41,16 +46,79 @@
     [super viewDidLoad];
     
     // prepare for this view controller
+    
+    
+    
+    
     deviceType = [UIDevice currentDevice].model;  // determine device type
+    if([deviceType isEqualToString:@"iPhone"]){
+        sizeFactor = 3.5;
+    }
+    else{
+        sizeFactor = 2.8;
+    }
+    
     reuseIdentifier = @"sub";
     [_subProcessorCollectionView registerNib:[UINib nibWithNibName:@"SubProcessorCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     documentInteractionController.delegate = self;
     documentInteractionController = [UIDocumentInteractionController new];
-    _processedImageView.image = originalImage;
-    processedImage = originalImage;
     
+   
     // Do any additional setup after loading the view from its nib.
 }
+
+- (CGSize)imageSize{
+    CGFloat boundsWidth  = [_processedImageView bounds].size.width,
+    boundsHeight = [_processedImageView bounds].size.height;
+    
+    CGSize  imageSize  = [_processedImageView.image size];
+    CGFloat imageRatio = imageSize.width / imageSize.height;
+    CGFloat viewRatio  = boundsWidth / boundsHeight;
+    
+    if(imageRatio < viewRatio) {
+        CGFloat scale = boundsHeight / imageSize.height;
+        CGFloat width = scale * imageSize.width;
+        if (width *sizeFactor > originalImage.size.width){
+            return CGSizeMake(width, boundsHeight);
+        }
+            
+        return CGSizeMake(width * sizeFactor, boundsHeight * sizeFactor);
+       
+    }
+    
+    CGFloat scale = boundsWidth / imageSize.width;
+    CGFloat height = scale * imageSize.height;
+    
+    if(boundsWidth *sizeFactor > originalImage.size.width){
+        return CGSizeMake(boundsWidth, height);
+    }
+    
+    return CGSizeMake(boundsWidth*sizeFactor, height*sizeFactor);
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    [self loadImage];
+    
+    float scale = sqrtf(originalImage.size.width * originalImage.size.height /MAX_RESOLUTION);
+    
+    if (scale < 1){
+        resizedOriginalImage = originalImage;
+    }
+    else{
+       
+        
+        resizedOriginalImage = [[ImageProcessorAnalyzer sharedInstance]resizeImage:originalImage toSize: CGSizeMake(floor(originalImage.size.width/scale), floor(originalImage.size.height/scale))];
+        _processedImageView.image = resizedOriginalImage;
+    }
+    /*
+    imageSizeInView = [self imageSize];
+    resizedOriginalImage = [[ImageProcessorAnalyzer sharedInstance]resizeImage:originalImage toSize:imageSizeInView];
+    _processedImageView.image = resizedOriginalImage;
+    */
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -69,15 +137,35 @@
 }
 */
 
-
+- (void)loadImage{
+    
+   
+    [_loadingImageActivityView startAnimating];
+    if(resizedOriginalImage){
+        
+        _processedImageView.image = resizedOriginalImage;
+    }
+    else{
+       _processedImageView.image = originalImage;
+    }
+    
+    processedImage = _processedImageView.image;
+    
+    [_loadingImageActivityView stopAnimating];
+}
 
 
 - (IBAction)resetButtonTouched:(id)sender {
     // reset the image
-    _processedImageView.image = originalImage;
-    processedImage = originalImage;
-    [self setArgumentSlider];
+    
+    [self loadImage];
+    selectedCellIndexPath = nil;
+    _sliderLabel.hidden = YES;
+    _processorArgumentSlider.hidden = YES;
+    
 }
+
+
 
 - (IBAction)actionButtonTouched:(id)sender {
     
@@ -96,16 +184,23 @@
    
 
 }
+
+
 - (IBAction)saveButtonTouched:(id)sender {
     
-    // save to album
+    NSLog(@"%@",_processedImageView.image);
+   // UIImageWriteToSavedPhotosAlbum([[ImageProcessorAnalyzer sharedInstance]resizeImage:_processedImageView.image toSize:originalImage.size], nil, nil, nil);
     UIImageWriteToSavedPhotosAlbum(_processedImageView.image, nil, nil, nil);
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"image saved in Album" preferredStyle:UIAlertControllerStyleActionSheet];
-    [self presentViewController:alert animated:YES completion:^{
-        [NSTimer scheduledTimerWithTimeInterval:0.6 repeats:NO block:^(NSTimer * _Nonnull timer) {
-            [alert dismissViewControllerAnimated:YES completion:nil];
-        }];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"saved in album" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [alert dismissViewControllerAnimated:YES completion:nil];
     }];
+    [alert addAction:action];
+    [self presentViewController:alert animated:YES completion:^{
+        
+    }];
+
+    
 }
 
 
@@ -190,11 +285,11 @@ numberOfRowsInComponent:(NSInteger)component{
     SubProcessorCollectionViewCell *cell = (SubProcessorCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     NSDictionary *processor = [[ImageProcessorAnalyzer sharedInstance]getProcessorOfIndex:indexPath.row inCategory:[self pickerViewSelectedProcessorCategory]];
     cell.subProcessorLabel.text = [processor objectForKey:@"FilterName"];
-  //  cell.baseView.backgroundColor = [UIColor whiteColor];
     cell.contentView.backgroundColor = [UIColor whiteColor];
     if (selectedCellIndexPath){
+        
+        // it indicates that the selected cell appear again
         if (selectedCellIndexPath.row == indexPath.row & selectedCellIndexPath.section == [self pickerViewSelectedProcessorCategory]){
-           // cell.baseView.backgroundColor = [UIColor clearColor];
             cell.contentView.backgroundColor = [UIColor clearColor];
         }
     }
@@ -220,7 +315,8 @@ numberOfRowsInComponent:(NSInteger)component{
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     if(![[NSUserDefaults standardUserDefaults] objectForKey:@"first"]){
-        
+       
+        // show tip for fresh user
         [[NSUserDefaults standardUserDefaults]setObject:@(true) forKey:@"first"];
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"By selecting the same processor again, you can revert this image process" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
@@ -234,7 +330,7 @@ numberOfRowsInComponent:(NSInteger)component{
     
   
     if ((selectedCellIndexPath != nil) & (selectedCellIndexPath.row == indexPath.row) & (selectedCellIndexPath.section == [self pickerViewSelectedProcessorCategory])){
-        // select the same processor, then revert its effect
+        // indicate the user select the same processor, so revert its effect
         _processedImageView.image = processedImage;
         [self setArgumentSlider];
     }
@@ -252,6 +348,8 @@ numberOfRowsInComponent:(NSInteger)component{
 
 
 - (void)setArgumentSlider{
+    
+    
     
     NSDictionary *processor = [[ImageProcessorAnalyzer sharedInstance]getProcessorOfIndex:selectedCellIndexPath.row inCategory:selectedCellIndexPath.section];
     
@@ -281,7 +379,6 @@ numberOfRowsInComponent:(NSInteger)component{
         // revert the hightlight of the previous cell
         if (oldCell) {
             
-          //  oldCell.baseView.backgroundColor = [UIColor whiteColor];
             oldCell.contentView.backgroundColor = [UIColor whiteColor];
         }
         else {
@@ -290,7 +387,6 @@ numberOfRowsInComponent:(NSInteger)component{
         }
     }
     SubProcessorCollectionViewCell *cell = (SubProcessorCollectionViewCell*)[_subProcessorCollectionView cellForItemAtIndexPath:indexPath];
-    //cell.baseView.backgroundColor = [UIColor clearColor];
     cell.contentView.backgroundColor = [UIColor clearColor];
     
     
@@ -298,14 +394,19 @@ numberOfRowsInComponent:(NSInteger)component{
 }
 
 - (void)processImageWithSelectedProcessor{
+    dispatch_async(dispatch_get_main_queue(), ^{
+       _processedImageView.image = [[ImageProcessorAnalyzer sharedInstance]processImage:processedImage WithArgument: _processorArgumentSlider.value ProcessorCategory:selectedCellIndexPath.section index:selectedCellIndexPath.row];
+    });
     
-    _processedImageView.image = [[ImageProcessorAnalyzer sharedInstance]processImage:processedImage WithArgument: _processorArgumentSlider.value ProcessorCategory:selectedCellIndexPath.section index:selectedCellIndexPath.row];
+    
     
 }
 
 - (IBAction)argumentValueChanged:(id)sender {
     [self processImageWithSelectedProcessor];
 }
+
+
 
 
 @end

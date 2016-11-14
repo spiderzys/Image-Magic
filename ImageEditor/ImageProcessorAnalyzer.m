@@ -53,19 +53,30 @@
 }
 
 - (UIImage*)processImage:(UIImage*)image WithArgument:(float)argument ProcessorCategory:(NSInteger)category index:(NSInteger)index{
-    
+ 
     NSDictionary *processor = [self getProcessorOfIndex:index inCategory:category];
     NSString *filterName = [processor objectForKey:@"FilterClassName"];
+    
     
     GPUImageFilter *filter = [[NSClassFromString(filterName) alloc]init];
     NSString *argumentName = [processor objectForKey:@"ArgumentName"];
     if(argumentName != nil){
        [filter setValue:@(argument) forKey:argumentName];
     }
-    
+   
     return [filter imageByFilteringImage:image];
+    
+
 }
 
+- (UIImage*)resizeImage:(UIImage*)image toSize:(CGSize)size{
+    
+    // resample image
+    GPUImageLanczosResamplingFilter *filter = [[GPUImageLanczosResamplingFilter alloc]init];
+    [filter forceProcessingAtSize:size];
+    return [filter imageByFilteringImage:image];
+    
+}
 
 
 
