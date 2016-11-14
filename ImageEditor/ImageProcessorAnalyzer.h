@@ -15,11 +15,11 @@
 
 - (NSInteger)getNumOfProcessorCategories;
 
-- (NSDictionary*)getCategoryOfIndex:(NSInteger)category;
+//- (NSDictionary*)getCategoryOfIndex:(NSInteger)category;
 
 - (NSString*)getNameOfProcessorCategoryOfIndex:(NSInteger)category;
 
-- (NSArray*)getProcessorsInCategory:(NSInteger)category;
+//- (NSArray*)getProcessorsInCategory:(NSInteger)category;
 
 - (NSInteger)getNumOfProcessorsInCategory:(NSInteger)category;
 

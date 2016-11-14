@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09D83D80AF16CA91ECAC9708 /* libPods-ImageEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F8B7D18F889F00F5618EF5 /* libPods-ImageEditor.a */; };
+		694FBCD91DDA229D00761F92 /* ImageProcessorAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 699B00251DD15E2600E933AE /* ImageProcessorAnalyzer.m */; };
+		694FBCDA1DDA236700761F92 /* ImageProcessorAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 699B00251DD15E2600E933AE /* ImageProcessorAnalyzer.m */; };
 		6951CB611DD2F68A00179EE7 /* GPUImageVibranceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6951CB601DD2F68A00179EE7 /* GPUImageVibranceFilter.m */; };
 		697824E81D6CC54D001437BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 697824E71D6CC54D001437BE /* main.m */; };
 		697824EB1D6CC54E001437BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 697824EA1D6CC54E001437BE /* AppDelegate.m */; };
@@ -448,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694FBCD91DDA229D00761F92 /* ImageProcessorAnalyzer.m in Sources */,
 				697825011D6CC54E001437BE /* ImageEditorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694FBCDA1DDA236700761F92 /* ImageProcessorAnalyzer.m in Sources */,
 				6978250C1D6CC54E001437BE /* ImageEditorUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,6 +617,7 @@
 		};
 		697825141D6CC54E001437BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C001C77E88AE36EE7D7B8EB /* Pods-ImageEditor.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ImageEditorTests/Info.plist;
@@ -625,6 +630,7 @@
 		};
 		697825151D6CC54E001437BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECBA8709364498104A05F9C4 /* Pods-ImageEditor.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ImageEditorTests/Info.plist;
@@ -637,6 +643,7 @@
 		};
 		697825171D6CC54E001437BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C001C77E88AE36EE7D7B8EB /* Pods-ImageEditor.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ImageEditorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -648,6 +655,7 @@
 		};
 		697825181D6CC54E001437BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECBA8709364498104A05F9C4 /* Pods-ImageEditor.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ImageEditorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
