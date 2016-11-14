@@ -10,8 +10,16 @@
 #import "ImageEditorViewController.h"
 
 
+@interface ViewController(){
+    PhotoRequester *requester;
+}
+
+@end
+
 
 @implementation ViewController
+
+
 
 - (void)viewDidLoad {
     
@@ -21,6 +29,8 @@
     GADRequest *request = [GADRequest request];
     [_bannderView loadRequest:request];
     
+    requester = [PhotoRequester sharedInstance];
+    requester.delegate = self;
   
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -32,7 +42,7 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [PhotoRequester sharedInstance].delegate = self;
+   // [PhotoRequester sharedInstance].delegate = self;
 }
 
 
