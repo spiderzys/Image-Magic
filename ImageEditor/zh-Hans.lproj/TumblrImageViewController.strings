@@ -1,0 +1,6 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "NcP-vv-icn"; */
+"NcP-vv-icn.normalTitle" = "取消";
+
+/* Class = "UISearchBar"; placeholder = "Input Tumblr Blog Name"; ObjectID = "NiP-1I-gDw"; */
+"NiP-1I-gDw.placeholder" = "输入tumblr博客名字";

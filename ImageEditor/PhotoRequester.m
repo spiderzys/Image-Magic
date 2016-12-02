@@ -90,7 +90,7 @@ didFinishPickingMediaWithInfo:(nonnull NSDictionary<NSString *,id> *)info{
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
     // dismiss picker
     [picker dismissViewControllerAnimated:YES completion:^{
-        
+        [_delegate didFinishRequestPhoto:nil];
     }];
 }
 

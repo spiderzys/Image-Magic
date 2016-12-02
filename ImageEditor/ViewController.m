@@ -42,6 +42,7 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    
    // [PhotoRequester sharedInstance].delegate = self;
 }
 
@@ -63,9 +64,9 @@
 }
 
 - (void)didFinishRequestPhoto:(UIImage*)photo{
-   
-    _backgroundImageView.image = photo;
-  
+    if (photo != nil){
+        _backgroundImageView.image = photo;
+    }
     [_loadingActivityIndicatorView stopAnimating];
 }
 

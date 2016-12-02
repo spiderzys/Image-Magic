@@ -25,12 +25,14 @@
 		699B00231DD14FCF00E933AE /* SubProcessorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699B00211DD14FCF00E933AE /* SubProcessorCollectionViewCell.xib */; };
 		699B00261DD15E2600E933AE /* ImageProcessorAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 699B00251DD15E2600E933AE /* ImageProcessorAnalyzer.m */; };
 		69C6B9061DCE769C0090835A /* ImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C6B9041DCE769C0090835A /* ImageEditorViewController.m */; };
-		69C6B9071DCE769C0090835A /* ImageEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C6B9051DCE769C0090835A /* ImageEditorViewController.xib */; };
+		69C92BDC1DF10932007D0D92 /* TumblrImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C92BDE1DF10932007D0D92 /* TumblrImageViewController.xib */; };
+		69C92BE11DF10960007D0D92 /* ImageEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C92BE31DF10960007D0D92 /* ImageEditorViewController.xib */; };
+		69C92BE81DF10A6E007D0D92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69C92BEA1DF10A6E007D0D92 /* InfoPlist.strings */; };
+		69C92BEE1DF10C34007D0D92 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69C92BF01DF10C34007D0D92 /* Localizable.strings */; };
+		69C92BF21DF122D8007D0D92 /* Magic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69C92BF41DF122D8007D0D92 /* Magic.plist */; };
 		69D0019B1DCA693A0085FF51 /* TumblrImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D001991DCA693A0085FF51 /* TumblrImageViewController.m */; };
-		69D0019C1DCA693A0085FF51 /* TumblrImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D0019A1DCA693A0085FF51 /* TumblrImageViewController.xib */; };
 		69D001A01DCA7AD40085FF51 /* TumblrImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D0019E1DCA7AD40085FF51 /* TumblrImageCollectionViewCell.m */; };
 		69D001A11DCA7AD40085FF51 /* TumblrImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D0019F1DCA7AD40085FF51 /* TumblrImageCollectionViewCell.xib */; };
-		69DEF5DF1DD03F0100891686 /* Magic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69DEF5DE1DD03F0100891686 /* Magic.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,14 +82,23 @@
 		699B00251DD15E2600E933AE /* ImageProcessorAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageProcessorAnalyzer.m; sourceTree = "<group>"; };
 		69C6B9031DCE769C0090835A /* ImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageEditorViewController.h; sourceTree = "<group>"; };
 		69C6B9041DCE769C0090835A /* ImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageEditorViewController.m; sourceTree = "<group>"; };
-		69C6B9051DCE769C0090835A /* ImageEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageEditorViewController.xib; sourceTree = "<group>"; };
+		69C92BDA1DF108F8007D0D92 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		69C92BDB1DF108F8007D0D92 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		69C92BDD1DF10932007D0D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TumblrImageViewController.xib; sourceTree = "<group>"; };
+		69C92BE01DF10938007D0D92 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TumblrImageViewController.strings"; sourceTree = "<group>"; };
+		69C92BE21DF10960007D0D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ImageEditorViewController.xib; sourceTree = "<group>"; };
+		69C92BE51DF10965007D0D92 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ImageEditorViewController.strings"; sourceTree = "<group>"; };
+		69C92BE91DF10A6E007D0D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		69C92BEB1DF10A71007D0D92 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		69C92BEF1DF10C34007D0D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		69C92BF11DF10C38007D0D92 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		69C92BF31DF122D8007D0D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Magic.plist; sourceTree = "<group>"; };
+		69C92BF51DF122DC007D0D92 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/Magic.plist"; sourceTree = "<group>"; };
 		69D001981DCA693A0085FF51 /* TumblrImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TumblrImageViewController.h; sourceTree = "<group>"; };
 		69D001991DCA693A0085FF51 /* TumblrImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TumblrImageViewController.m; sourceTree = "<group>"; };
-		69D0019A1DCA693A0085FF51 /* TumblrImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TumblrImageViewController.xib; sourceTree = "<group>"; };
 		69D0019D1DCA7AD40085FF51 /* TumblrImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TumblrImageCollectionViewCell.h; sourceTree = "<group>"; };
 		69D0019E1DCA7AD40085FF51 /* TumblrImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TumblrImageCollectionViewCell.m; sourceTree = "<group>"; };
 		69D0019F1DCA7AD40085FF51 /* TumblrImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TumblrImageCollectionViewCell.xib; sourceTree = "<group>"; };
-		69DEF5DE1DD03F0100891686 /* Magic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Magic.plist; sourceTree = "<group>"; };
 		9C001C77E88AE36EE7D7B8EB /* Pods-ImageEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageEditor/Pods-ImageEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		ECBA8709364498104A05F9C4 /* Pods-ImageEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageEditor/Pods-ImageEditor.release.xcconfig"; sourceTree = "<group>"; };
 		F6F8B7D18F889F00F5618EF5 /* libPods-ImageEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,7 +171,9 @@
 				697824F41D6CC54E001437BE /* LaunchScreen.storyboard */,
 				6978251B1D6CEA94001437BE /* Assets.xcassets */,
 				697824F71D6CC54E001437BE /* Info.plist */,
-				69DEF5DE1DD03F0100891686 /* Magic.plist */,
+				69C92BEA1DF10A6E007D0D92 /* InfoPlist.strings */,
+				69C92BF01DF10C34007D0D92 /* Localizable.strings */,
+				69C92BF41DF122D8007D0D92 /* Magic.plist */,
 				697824E61D6CC54D001437BE /* Supporting Files */,
 			);
 			path = ImageEditor;
@@ -200,10 +213,10 @@
 				697824EF1D6CC54E001437BE /* Main.storyboard */,
 				69D001981DCA693A0085FF51 /* TumblrImageViewController.h */,
 				69D001991DCA693A0085FF51 /* TumblrImageViewController.m */,
-				69D0019A1DCA693A0085FF51 /* TumblrImageViewController.xib */,
+				69C92BDE1DF10932007D0D92 /* TumblrImageViewController.xib */,
 				69C6B9031DCE769C0090835A /* ImageEditorViewController.h */,
 				69C6B9041DCE769C0090835A /* ImageEditorViewController.m */,
-				69C6B9051DCE769C0090835A /* ImageEditorViewController.xib */,
+				69C92BE31DF10960007D0D92 /* ImageEditorViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -334,6 +347,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 697824DA1D6CC54D001437BE;
 			productRefGroup = 697824E41D6CC54D001437BE /* Products */;
@@ -353,12 +367,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				697824F61D6CC54E001437BE /* LaunchScreen.storyboard in Resources */,
-				69C6B9071DCE769C0090835A /* ImageEditorViewController.xib in Resources */,
+				69C92BE11DF10960007D0D92 /* ImageEditorViewController.xib in Resources */,
 				6978251C1D6CEA94001437BE /* Assets.xcassets in Resources */,
-				69DEF5DF1DD03F0100891686 /* Magic.plist in Resources */,
+				69C92BF21DF122D8007D0D92 /* Magic.plist in Resources */,
 				699B00231DD14FCF00E933AE /* SubProcessorCollectionViewCell.xib in Resources */,
+				69C92BEE1DF10C34007D0D92 /* Localizable.strings in Resources */,
 				69D001A11DCA7AD40085FF51 /* TumblrImageCollectionViewCell.xib in Resources */,
-				69D0019C1DCA693A0085FF51 /* TumblrImageViewController.xib in Resources */,
+				69C92BDC1DF10932007D0D92 /* TumblrImageViewController.xib in Resources */,
+				69C92BE81DF10A6E007D0D92 /* InfoPlist.strings in Resources */,
 				697824F11D6CC54E001437BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +500,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				697824F01D6CC54E001437BE /* Base */,
+				69C92BDA1DF108F8007D0D92 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -492,8 +509,54 @@
 			isa = PBXVariantGroup;
 			children = (
 				697824F51D6CC54E001437BE /* Base */,
+				69C92BDB1DF108F8007D0D92 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		69C92BDE1DF10932007D0D92 /* TumblrImageViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69C92BDD1DF10932007D0D92 /* Base */,
+				69C92BE01DF10938007D0D92 /* zh-Hans */,
+			);
+			name = TumblrImageViewController.xib;
+			sourceTree = "<group>";
+		};
+		69C92BE31DF10960007D0D92 /* ImageEditorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69C92BE21DF10960007D0D92 /* Base */,
+				69C92BE51DF10965007D0D92 /* zh-Hans */,
+			);
+			name = ImageEditorViewController.xib;
+			sourceTree = "<group>";
+		};
+		69C92BEA1DF10A6E007D0D92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69C92BE91DF10A6E007D0D92 /* Base */,
+				69C92BEB1DF10A71007D0D92 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		69C92BF01DF10C34007D0D92 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69C92BEF1DF10C34007D0D92 /* Base */,
+				69C92BF11DF10C38007D0D92 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		69C92BF41DF122D8007D0D92 /* Magic.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69C92BF31DF122D8007D0D92 /* Base */,
+				69C92BF51DF122DC007D0D92 /* zh-Hans */,
+			);
+			name = Magic.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -503,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -550,6 +614,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

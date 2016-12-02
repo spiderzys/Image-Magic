@@ -4,12 +4,12 @@
 <array>
 	<dict>
 		<key>CategoryName</key>
-		<string>Color</string>
+		<string>颜色</string>
 		<key>Sub</key>
 		<array>
 			<dict>
 				<key>FilterName</key>
-				<string>Contrast</string>
+				<string>对比度</string>
 				<key>FilterClassName</key>
 				<string>GPUImageContrastFilter</string>
 				<key>ArgumentName</key>
@@ -23,7 +23,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Saturation</string>
+				<string>饱和度</string>
 				<key>FilterClassName</key>
 				<string>GPUImageSaturationFilter</string>
 				<key>ArgumentName</key>
@@ -37,7 +37,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>R-multiplier</string>
+				<string>红色系数</string>
 				<key>FilterClassName</key>
 				<string>GPUImageRGBFilter</string>
 				<key>ArgumentName</key>
@@ -51,7 +51,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>G-multiplier</string>
+				<string>蓝色系数</string>
 				<key>FilterClassName</key>
 				<string>GPUImageRGBFilter</string>
 				<key>ArgumentName</key>
@@ -65,7 +65,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>B-multiplier</string>
+				<string>绿色系数</string>
 				<key>FilterClassName</key>
 				<string>GPUImageRGBFilter</string>
 				<key>ArgumentName</key>
@@ -79,7 +79,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Hue</string>
+				<string>色调</string>
 				<key>FilterClassName</key>
 				<string>GPUImageHueFilter</string>
 				<key>ArgumentName</key>
@@ -93,7 +93,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Vibrance</string>
+				<string>自然饱和度</string>
 				<key>FilterClassName</key>
 				<string>GPUImageVibranceFilter</string>
 				<key>ArgumentName</key>
@@ -109,12 +109,12 @@
 	</dict>
 	<dict>
 		<key>CategoryName</key>
-		<string>Light</string>
+		<string>光亮</string>
 		<key>Sub</key>
 		<array>
 			<dict>
 				<key>FilterName</key>
-				<string>Brightness</string>
+				<string>亮度</string>
 				<key>FilterClassName</key>
 				<string>GPUImageBrightnessFilter</string>
 				<key>ArgumentName</key>
@@ -128,7 +128,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Exposure</string>
+				<string>曝光</string>
 				<key>FilterClassName</key>
 				<string>GPUImageExposureFilter</string>
 				<key>ArgumentName</key>
@@ -142,7 +142,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Gamma</string>
+				<string>伽马</string>
 				<key>FilterClassName</key>
 				<string>GPUImageGammaFilter</string>
 				<key>ArgumentName</key>
@@ -156,7 +156,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Opacity</string>
+				<string>不透明性</string>
 				<key>FilterClassName</key>
 				<string>GPUImageOpacityFilter</string>
 				<key>ArgumentName</key>
@@ -170,7 +170,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Shadow</string>
+				<string>阴影</string>
 				<key>FilterClassName</key>
 				<string>GPUImageHighlightShadowFilter</string>
 				<key>ArgumentName</key>
@@ -184,7 +184,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Highlight</string>
+				<string>高光</string>
 				<key>FilterClassName</key>
 				<string>GPUImageHighlightShadowFilter</string>
 				<key>ArgumentName</key>
@@ -200,18 +200,18 @@
 	</dict>
 	<dict>
 		<key>CategoryName</key>
-		<string>Effect</string>
+		<string>效果</string>
 		<key>Sub</key>
 		<array>
 			<dict>
 				<key>FilterName</key>
-				<string>Grayscale</string>
+				<string>灰度</string>
 				<key>FilterClassName</key>
 				<string>GPUImageGrayscaleFilter</string>
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>SepiaTone</string>
+				<string>复古</string>
 				<key>FilterClassName</key>
 				<string>GPUImageSepiaFilter</string>
 				<key>ArgumentName</key>
@@ -225,13 +225,13 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Color Invert</string>
+				<string>颜色反转</string>
 				<key>FilterClassName</key>
 				<string>GPUImageColorInvertFilter</string>
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Sharpen</string>
+				<string>清晰</string>
 				<key>FilterClassName</key>
 				<string>GPUImageSharpenFilter</string>
 				<key>ArgumentName</key>
@@ -245,7 +245,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Emboss</string>
+				<string>浮雕</string>
 				<key>FilterClassName</key>
 				<string>GPUImageEmbossFilter</string>
 				<key>ArgumentName</key>
@@ -259,7 +259,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Halftone</string>
+				<string>半色调</string>
 				<key>FilterClassName</key>
 				<string>GPUImageHalftoneFilter</string>
 				<key>ArgumentName</key>
@@ -273,7 +273,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>Pixellate</string>
+				<string>像素</string>
 				<key>FilterClassName</key>
 				<string>GPUImagePixellateFilter</string>
 				<key>ArgumentName</key>
@@ -287,7 +287,7 @@
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>CGAColorspace</string>
+				<string>色彩滤镜</string>
 				<key>FilterClassName</key>
 				<string>GPUImageCGAColorspaceFilter</string>
 			</dict>
@@ -295,24 +295,24 @@
 	</dict>
 	<dict>
 		<key>CategoryName</key>
-		<string>Pro</string>
+		<string>专业</string>
 		<key>Sub</key>
 		<array>
 			<dict>
 				<key>FilterName</key>
-				<string>RGBErosion</string>
+				<string>色彩腐蚀</string>
 				<key>FilterClassName</key>
 				<string>GPUImageRGBErosionFilter</string>
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>RGBClosing</string>
+				<string>色彩模糊</string>
 				<key>FilterClassName</key>
 				<string>GPUImageRGBClosingFilter</string>
 			</dict>
 			<dict>
 				<key>FilterName</key>
-				<string>LuminanceThreshold</string>
+				<string>光阈值</string>
 				<key>FilterClassName</key>
 				<string>GPUImageLuminanceThresholdFilter</string>
 				<key>ArgumentName</key>

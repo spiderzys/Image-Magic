@@ -1,0 +1,9 @@
+
+/* Class = "UIBarButtonItem"; title = "Reset"; ObjectID = "Fiw-kx-rVa"; */
+"Fiw-kx-rVa.title" = "重置";
+
+/* Class = "UILabel"; text = "label"; ObjectID = "qTq-77-Bot"; */
+"qTq-77-Bot.text" = "label";
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "uBj-gb-5mt"; */
+"uBj-gb-5mt.title" = "完成";

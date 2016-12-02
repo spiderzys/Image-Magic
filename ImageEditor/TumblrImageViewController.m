@@ -114,7 +114,7 @@
 
 - (IBAction)cancelBardidTouched:(id)sender {
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+     [_delegate tumblrImagePickerController:self didFinishPickingImage:nil];
 }
 
 
@@ -122,8 +122,8 @@
 
 
 - (void)didRequestFailedDueToErrorMessage:(NSString*)errorMessage{
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat: @"Error message: %@ \n Please check your input and network",errorMessage] preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat: @"%@ \n %@",NSLocalizedString(@"error message", nil),errorMessage,NSLocalizedString(@"please check your input and network", nil)] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:NSLocalizedString(@"ok", nil)  style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alert dismissViewControllerAnimated:YES completion:nil];
     }];
     [alert addAction:action];

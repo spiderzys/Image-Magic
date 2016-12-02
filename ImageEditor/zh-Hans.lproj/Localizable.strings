@@ -1,0 +1,17 @@
+/* 
+  Localize.strings
+  ImageEditor
+
+  Created by YANGSHENG ZOU on 2016-12-01.
+  Copyright © 2016 YANGSHENG ZOU. All rights reserved.
+*/
+
+
+"connection_error" = "连接失败";
+"No_blog_found" = "没有找到博客";
+"By selecting the same processor again, you can revert this image process" = "再次按下，可以撤回该处理";
+"ok" = "好";
+"no response" = "没有回应";
+"error message" = "出错啦";
+"please check your input and network" = "检查网络";
+"saved in album" = "已经保存到相册";

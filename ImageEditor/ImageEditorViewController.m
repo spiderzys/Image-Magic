@@ -191,7 +191,7 @@
     NSLog(@"%@",_processedImageView.image);
    // UIImageWriteToSavedPhotosAlbum([[ImageProcessorAnalyzer sharedInstance]resizeImage:_processedImageView.image toSize:originalImage.size], nil, nil, nil);
     UIImageWriteToSavedPhotosAlbum(_processedImageView.image, nil, nil, nil);
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"saved in album" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString( @"saved in album", "") preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *action = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alert dismissViewControllerAnimated:YES completion:nil];
     }];
@@ -318,8 +318,8 @@ numberOfRowsInComponent:(NSInteger)component{
        
         // show tip for fresh user
         [[NSUserDefaults standardUserDefaults]setObject:@(true) forKey:@"first"];
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"By selecting the same processor again, you can revert this image process" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *action = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString(@"By selecting the same processor again, you can revert this image process",nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:NSLocalizedString(@"ok",nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             [alert dismissViewControllerAnimated:YES completion:nil];
         }];
         [alert addAction:action];

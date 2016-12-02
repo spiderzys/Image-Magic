@@ -23,7 +23,7 @@
     [[[NSURLSession sharedSession]dataTaskWithURL:[NSURL URLWithString:blogRequestString] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         if(error){
-            [_delegate didRequestFailedDueToErrorMessage:@"connection error"];
+            [_delegate didRequestFailedDueToErrorMessage:NSLocalizedString(@"connection error",nil)];
         }
         else{
             [self parseTumblrData:data];
@@ -47,11 +47,17 @@
         NSDictionary *response = [dic objectForKey:@"response"];
         
         if (response.count == 0){
-            [_delegate didRequestFailedDueToErrorMessage:@"No blog found"];
+            [_delegate didRequestFailedDueToErrorMessage:NSLocalizedString(@"no response",nil)];
             return;
         }
         
         NSArray *posts = [response objectForKey:@"posts"];
+        
+        if (posts.count == 0){
+            [_delegate didRequestFailedDueToErrorMessage:NSLocalizedString(@"No_blog_found", @"???")];
+             return;
+             }
+        
         
         for (NSDictionary* post in posts){
             NSArray *photos = [post objectForKey:@"photos"];
