@@ -25,6 +25,8 @@
     
     [super viewDidLoad];
     
+    _backgroundImageView.image = [UIImage imageNamed:NSLocalizedString(@"Launch", "")];
+    
     [_bannderView setRootViewController:self];
     GADRequest *request = [GADRequest request];
     [_bannderView loadRequest:request];

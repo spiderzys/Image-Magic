@@ -97,7 +97,7 @@
                                     <action selector="GoButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdN-wr-j15"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-C5-dRr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-C5-dRr">
                                 <rect key="frame" x="0.0" y="176" width="320" height="392"/>
                                 <color key="backgroundColor" red="0.21113496094456666" green="0.264911455057666" blue="0.27337801395939088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -145,7 +145,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Launch" width="969" height="1020"/>
         <image name="Tumblr" width="100" height="100"/>
         <image name="camera" width="512" height="512"/>
         <image name="photo" width="128" height="128"/>
